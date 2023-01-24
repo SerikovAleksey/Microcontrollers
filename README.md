@@ -15,7 +15,7 @@
 
 4. Компас <a href="https://github.com/SerikovAleksey/Microcontrollers/blob/main/ANTENNA_PROJECT/Core/Inc/compass.h">HMC5883L</a> (<a href="https://github.com/SerikovAleksey/Microcontrollers/blob/main/ANTENNA_PROJECT/Core/Src/compass.c">C файл</a>)
 
-5. Серво привод <a href="https://github.com/SerikovAleksey/Microcontrollers/blob/main/RC_car/Core/Inc/servo.h">MG-90</a> (<a href="https://github.com/SerikovAleksey/Microcontrollers/blob/main/RC_car/Core/Src/servo.c">C файл</a>)
+5. Серво привод <a href="https://github.com/SerikovAleksey/Microcontrollers/tree/main/RC_car/management_rc_car/Core/Inc/servo.h">MG-90</a> (<a href="https://github.com/SerikovAleksey/Microcontrollers/tree/main/RC_car/management_rc_car/Core/Src/servo.c">C файл</a>)
 
-6. Мотор <a href="https://github.com/SerikovAleksey/Microcontrollers/blob/main/RC_car/Core/Inc/motor.h">A2212/13T</a> (<a href="https://github.com/SerikovAleksey/Microcontrollers/blob/main/RC_car/Core/Src/motor.c">C файл</a>)
+6. Мотор <a href="https://github.com/SerikovAleksey/Microcontrollers/tree/main/RC_car/management_rc_car/Core/Inc/motor.h">A2212/13T</a> (<a href="https://github.com/SerikovAleksey/Microcontrollers/tree/main/RC_car/management_rc_car/Core/Src/motor.c">C файл</a>)
 
