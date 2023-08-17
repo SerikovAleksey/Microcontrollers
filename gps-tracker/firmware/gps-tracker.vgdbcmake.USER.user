@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<VisualGDBUserPreferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserDefinedVariableValues />
+  <DebugPreferences xsi:type="com.visualgdb.debug.embedded.preferences">
+    <CatchpointConfiguration>
+      <Exec>false</Exec>
+      <Fork>false</Fork>
+      <Vfork>false</Vfork>
+      <Syscalls />
+      <CXXCatchpoints />
+    </CatchpointConfiguration>
+    <MaskInterruptsWhileStepping>false</MaskInterruptsWhileStepping>
+    <MemoryWindowPreferences />
+    <e />
+    <b>
+      <a>
+        <a>com.sysprogs.AllGlobals</a>
+        <b>
+          <e32>
+            <c>rx_buffer</c>
+            <b>com.sysprogs.fixed</b>
+            <f>true</f>
+            <e>
+              <ComparisonMode>Equals</ComparisonMode>
+              <Enabled>false</Enabled>
+            </e>
+            <h>false</h>
+            <g>false</g>
+            <a>false</a>
+          </e32>
+        </b>
+      </a>
+      <a>
+        <a>com.sysprogs.SpecificVariables</a>
+        <b />
+      </a>
+      <a>
+        <a>com.sysprogs.Custom</a>
+        <b />
+      </a>
+    </b>
+    <c>
+      <b>AllGlobals</b>
+      <a>false</a>
+    </c>
+    <Suggestions />
+    <HardwareRegisters />
+  </DebugPreferences>
+</VisualGDBUserPreferences>

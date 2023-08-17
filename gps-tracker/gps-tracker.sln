@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "gps-tracker", "firmware\gps-tracker.vgdbcmake", "{BBA65A7A-C431-43EA-A624-B5935118CAAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBA65A7A-C431-43EA-A624-B5935118CAAE}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{BBA65A7A-C431-43EA-A624-B5935118CAAE}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{BBA65A7A-C431-43EA-A624-B5935118CAAE}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{BBA65A7A-C431-43EA-A624-B5935118CAAE}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{BBA65A7A-C431-43EA-A624-B5935118CAAE}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{BBA65A7A-C431-43EA-A624-B5935118CAAE}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{BBA65A7A-C431-43EA-A624-B5935118CAAE}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{BBA65A7A-C431-43EA-A624-B5935118CAAE}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13EA59D5-D7EB-46B4-B7AB-64D6B1469584}
+	EndGlobalSection
+EndGlobal

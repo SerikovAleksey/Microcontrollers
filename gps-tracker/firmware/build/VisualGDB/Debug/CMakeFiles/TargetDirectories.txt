@@ -1,0 +1,5 @@
+C:/Microcontrollers/gps-tracker/firmware/build/VisualGDB/Debug/CMakeFiles/gps-tracker-bin.dir
+C:/Microcontrollers/gps-tracker/firmware/build/VisualGDB/Debug/CMakeFiles/BSP.dir
+C:/Microcontrollers/gps-tracker/firmware/build/VisualGDB/Debug/CMakeFiles/gps-tracker.dir
+C:/Microcontrollers/gps-tracker/firmware/build/VisualGDB/Debug/CMakeFiles/edit_cache.dir
+C:/Microcontrollers/gps-tracker/firmware/build/VisualGDB/Debug/CMakeFiles/rebuild_cache.dir
