@@ -97,17 +97,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 	}
 }
 
-//void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size){
-//	if (huart == &huart1) {
-////		__HAL_UART_DISABLE_IT(&huart1, UART_IT_IDLE);
-////		HAL_UART_AbortReceive_IT(&huart1);
-////		__HAL_UART_CLEAR_IDLEFLAG(&huart1);
-////		__HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE);
-////		HAL_UART_Receive_IT(&huart1, (uint8_t*)rx_buffer, Size);
-//		
-//		HAL_UARTEx_ReceiveToIdle_IT(&huart1, (uint8_t*)rx_buffer, Size);
-//	}
-//}
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
@@ -172,8 +161,6 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	__HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE);
 	HAL_UART_Receive_IT(&huart1, (uint8_t*)rx_buffer, rx_buffer_size);
-	//HAL_UARTEx_ReceiveToIdle_IT(&huart1, (uint8_t*)rx_buffer, rx_buffer_size);
-	//HAL_UART_Transmit(&huart1, tx_buf3, 12, 100);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -217,7 +204,7 @@ int main(void)
 //		  amount_lists++;
 //	  } // save data on one page flash-memory
 		
-	  if (push_on_off == 1 && !push_make_point)
+	 // if (push_on_off == 1 && !push_make_point)
 	  {
 
 		  nmea_handler(rx_buffer, AVERAGE);
@@ -225,10 +212,10 @@ int main(void)
 		  //HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
 		  
 	  } // start receive data
-	  if (check_valid_data(rx_buffer) == 1)
-	  {
-		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
-	  }
+//	  if (check_valid_data(rx_buffer) == 1)
+//	  {
+//		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
+//	  }
 //	  if (push_on_off == 1 && push_make_point) 
 //	  {
 //		  nmea_handler(rx_buffer, SPECIAL);

@@ -6,13 +6,17 @@
 #include <stdlib.h>
 
 //---------DEFINES---------//
-#define ADDR_FLASH_PAGE_126   ((uint32_t)0x0801F800) /* Base @ of Page 126, 1 Kbytes */
-#define ADDR_AMOUNT_PAGES     ((uint32_t)0x0801FC00)
+#define ADDR_FLASH_PAGE_START ((uint32_t)0x0801F800) /* Base @ of Page 126, 1 Kbytes */
+#define ADDR_AMOUNT_PAGES     ((uint32_t)0x0801FC00)                                       // для stm32f103c8t6
 #define ADDR_REMAINEDR_SIZE   ((uint32_t)0x0801FC02)
+
+//#define ADDR_FLASH_PAGE_START ((uint32_t)0x0800F800) /* Base @ of Page 62, 1 Kbytes */
+//#define ADDR_AMOUNT_PAGES     ((uint32_t)0x0800FC00)                                     // для stm32f103c6t6
+//#define ADDR_REMAINEDR_SIZE   ((uint32_t)0x0800FC02)
 
 //---------VARIABLES---------//
 static uint16_t amount_lists = 1; //Shows how many pages are written
-static uint32_t address_list_now = ADDR_FLASH_PAGE_126; //Shows the last page of recording
+static uint32_t address_list_now = ADDR_FLASH_PAGE_START; //Shows the last page of recording
 static uint16_t buf_u16[1800]; 
 static uint8_t buf_u8[3600];
 
