@@ -68,7 +68,7 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	if (GPIO_Pin == GPIO_PIN_0) But++;
+	if (GPIO_Pin == BUTTON_Pin) But++;
 	if (But == 2 || But == 3) Button++;
 	if (But == 2 || But == 3) check++;
 	if (But == 12) But = 1;
@@ -115,12 +115,12 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  color(7);
+	  moth();
 	  HAL_Delay(1000);
-	  color(6);
-//	  if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0))
+//	  color(6);
+//	  if (HAL_GPIO_ReadPin(BUTTON_GPIO_Port, BUTTON_Pin))
 //	  {
-//		  while (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0))
+//		  while (HAL_GPIO_ReadPin(BUTTON_GPIO_Port, BUTTON_Pin))
 //		  {
 //			  time++;
 //			  HAL_Delay(10);
