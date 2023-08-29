@@ -69,9 +69,10 @@ void SystemClock_Config(void);
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 	if (GPIO_Pin == BUTTON_Pin) But++;
-	if (But == 2 || But == 3) Button++;
-	if (But == 2 || But == 3) check++;
-	if (But == 12) But = 1;
+//	if (But == 2 || But == 3) Button++;
+//	if (But == 2 || But == 3) check++;
+	if (But == 11) But = 1;
+	check = 0;
 }
 /* USER CODE END 0 */
 
@@ -108,114 +109,118 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim2);
-	
+	led_init();
+	led_start();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  moth();
-	  HAL_Delay(1000);
+//	  moth();
+//	  HAL_Delay(1000);
 //	  color(6);
 //	  if (HAL_GPIO_ReadPin(BUTTON_GPIO_Port, BUTTON_Pin))
 //	  {
-//		  while (HAL_GPIO_ReadPin(BUTTON_GPIO_Port, BUTTON_Pin))
-//		  {
-//			  time++;
-//			  HAL_Delay(10);
-//				
-//			  if (time > 30)
-//			  {
-//				  flag = 1;
-//				  if (s == 0 && Button != 1) 
-//				  {
-//					  light_regulator(0);
-//				  }
-//				  if (s == 1 && Button != 1) 
-//				  {
-//					  light_regulator(1);
-//				  }
-//			  }
-//		  }
-//		  if (time < 20)
-//		  {
-//			  //HAL_Delay(400);
-//			  time = 0;
-//		  }
-//		  if (s == 1) 
-//		  {
-//			  s = 0;
-//		  }
-//		  else s = 1;
-//		  time = 0;
-//		  if (flag == 1) But--;
-//		  Button = But;
-//		  flag = 0;
+		  while (HAL_GPIO_ReadPin(BUTTON_GPIO_Port, BUTTON_Pin))
+		  {
+			  time++;
+			  HAL_Delay(10);
+				
+			  if (time > 30)
+			  {
+				  flag = 1;
+				  if (s == 0 && Button != 1) 
+				  {
+					  light_regulator(0);
+					  check = 1;
+				  }
+				  if (s == 1 && Button != 1) 
+				  {
+					  light_regulator(1);
+				  }
+			  }
+		  }
+		  if (time < 20)
+		  {
+			  //HAL_Delay(400);
+			  time = 0;
+		  }
+		  if (s == 1) 
+		  {
+			  s = 0;
+		  }
+		  else s = 1;
+		  time = 0;
+		  if (flag == 1) But--;
+		  Button = But;
+		  flag = 0;
 //	  }
-//	  if (Button == 1 && check == 0) 
-//	  {	
-//		  s = 0;
-//		  fire();
-//	  }			
-//	  if (Button == 2 && check == 1) 
-//	  {	
-//		  s = 0;
-//		  moth();
-//	  }
-//	  if (Button == 3 && check == 2)
-//	  {
-//		  s = 0;
-//		  color(0);
-//		  check++;
-//	  }
-//	  if (Button == 4 && check == 3)
-//	  {
-//		  s = 0;
-//		  color(1);
-//		  check++;
-//	  }
-//	  if (Button == 5 && check == 4)
-//	  {
-//		  s = 0;
-//		  color(2);
-//		  check++;
-//	  }
-//	  if (Button == 6 && check == 5)
-//	  {
-//		  s = 0;
-//		  color(3);
-//		  check++;
-//	  }
-//	  if (Button == 7 && check == 6)
-//	  {
-//		  s = 0;
-//		  color(4);
-//		  check++;
-//	  }
-//	  if (Button == 8 && check == 7)
-//	  {
-//		  s = 0;
-//		  color(5);
-//		  check++;
-//	  }
-//	  if (Button == 9 && check == 8)
-//	  {
-//		  s = 0;
-//		  color(6);
-//		  check++;
-//	  }
-//	  if (Button == 10 && check == 9)
-//	  {
-//		  s = 0;
-//		  color(7);
-//		  check++;
-//	  }
+	  if (Button == 1 && check == 0) 
+	  {	
+		  s = 0;
+		  fire();
+	  }			
+	  if (Button == 2) 
+	  {	
+		  s = 0;
+		  color(0);
+		  check++;
+	  }
+	  if (Button == 3)
+	  {
+		  s = 0;
+		  color(1);
+		  check++;
+		  
+	  }
+	  if (Button == 4)
+	  {
+		  s = 0;
+		  color(2);
+		  check++;
+	  }
+	  if (Button == 5)
+	  {
+		  s = 0;
+		  color(3);
+		  check++;
+	  }
+	  if (Button == 6)
+	  {
+		  s = 0;
+		  color(4);
+		  check++;
+	  }
+	  if (Button == 7)
+	  {
+		  s = 0;
+		  color(5);
+		  check++;
+	  }
+	  if (Button == 8)
+	  {
+		  s = 0;
+		  color(6);
+		  check++;
+		  
+	  }
+	  if (Button == 9)
+	  {
+		  s = 0;
+		  color(7);
+		  check++;
+	  }
+	  if (Button == 10)
+	  {
+		  s = 0;
+		  color(8);
+		  check = 0;
+	  }
+	  HAL_Delay(100);
 //	  if (Button == 11 && check == 10)
 //	  {
 //		  s = 0;
-//		  color(8);
-//		  check = 0;
 //	  }
     /* USER CODE END WHILE */
 
