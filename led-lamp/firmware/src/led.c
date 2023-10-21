@@ -94,13 +94,13 @@ void moth(void)
 	
 	led_prepareValue(buf);
 	led_setValue();
-	//led_start();
+//	led_start();
 	for(int k = 0; k < LED_COUNT - 1; k++)
 	{
-		memcpy((void*)DMA_BUF_TEMP,(void*)(BUF_DMA + DELAY_LEN + 6 * 24),48);
+		memcpy((void*)DMA_BUF_TEMP,(void*)(BUF_DMA + DELAY_LEN + (LED_COUNT - 1) * 24),48);
 		for(int i = LED_COUNT - 2; i >= 0; i--)
 		{
-			memcpy((void*)(i*24+BUF_DMA + 24 + DELAY_LEN),(void*)(i*24+BUF_DMA + DELAY_LEN),48);
+			memcpy((void*)(i * 24 + BUF_DMA + 24 + DELAY_LEN),(void*)(i * 24 + BUF_DMA + DELAY_LEN), 48);
 		}
 		memcpy((void*)(BUF_DMA + DELAY_LEN),(void*)DMA_BUF_TEMP,48);
 		led_start();
@@ -113,9 +113,9 @@ void moth(void)
 		memcpy((void*)DMA_BUF_TEMP,(void*)(BUF_DMA + DELAY_LEN),48);
 		for(int i = 0; i <  LED_COUNT - 1; i++)
 		{
-			memcpy((void*)(i*24+BUF_DMA + DELAY_LEN),(void*)(i*24+BUF_DMA + 24 + DELAY_LEN),48);
+			memcpy((void*)(i * 24 + BUF_DMA + DELAY_LEN), (void*)(i * 24 + BUF_DMA + 24 + DELAY_LEN), 48);
 		}
-		memcpy((void*)(BUF_DMA+DELAY_LEN+6*24),(void*)DMA_BUF_TEMP,48);
+		memcpy((void*)(BUF_DMA + DELAY_LEN + (LED_COUNT - 1) * 24),(void*)DMA_BUF_TEMP, 48);
 		
 		led_start();
 		HAL_Delay(90);

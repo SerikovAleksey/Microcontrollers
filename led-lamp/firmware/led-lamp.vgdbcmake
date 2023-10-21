@@ -18,9 +18,9 @@
     <ToolchainID>
       <ID>com.visualgdb.arm-eabi</ID>
       <Version>
-        <GCC>12.2.1</GCC>
-        <GDB>12.2</GDB>
-        <Revision>2</Revision>
+        <GCC>12.3.1</GCC>
+        <GDB>13.2</GDB>
+        <Revision>1</Revision>
       </Version>
     </ToolchainID>
     <RelativeSourceDirectory />
@@ -139,7 +139,7 @@
     <DebugMethod>
       <ID>com.sysprogs.arm.openocd</ID>
       <InterfaceID>stlink-v2</InterfaceID>
-      <InterfaceSerialNumber>6&amp;5280D8E&amp;0&amp;2</InterfaceSerialNumber>
+      <InterfaceSerialNumber>6&amp;13C452C7&amp;0&amp;2</InterfaceSerialNumber>
       <Configuration xsi:type="com.visualgdb.edp.openocd.settings">
         <CommandLine>-f interface/stlink-v2.cfg -c "adapter speed 480" -f target/stm32f1x.cfg -c init -c "reset init"</CommandLine>
         <ExtraParameters>
@@ -155,6 +155,7 @@
           <string>mon halt</string>
           <string>mon reset init</string>
           <string>load</string>
+          <string>mon reset init</string>
         </StartupCommands>
         <ProgramFLASHUsingExternalTool>false</ProgramFLASHUsingExternalTool>
         <PreferredGDBPort>0</PreferredGDBPort>
