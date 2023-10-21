@@ -2,7 +2,7 @@
 
 #include "stm32f1xx.h"
 
-#define MAX 1300 // This value show the maximum of the PWM value which is sended to motor
+#define MAX 2300 // This value show the maximum of the PWM value which is sended to motor
 #define MIN 800 // This value show the minimum of the PWM value which is sended to motor
 
 extern TIM_HandleTypeDef htim2;

@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"management_rc_car\startup_stm32f103xb.o"
+"management_rc_car\servo.o"
+"management_rc_car\motor.o"
+"management_rc_car\main.o"
+"management_rc_car\stm32f1xx_it.o"
+"management_rc_car\stm32f1xx_hal_msp.o"
+"management_rc_car\stm32f1xx_hal_gpio_ex.o"
+"management_rc_car\stm32f1xx_hal_tim.o"
+"management_rc_car\stm32f1xx_hal_tim_ex.o"
+"management_rc_car\stm32f1xx_hal.o"
+"management_rc_car\stm32f1xx_hal_rcc.o"
+"management_rc_car\stm32f1xx_hal_rcc_ex.o"
+"management_rc_car\stm32f1xx_hal_gpio.o"
+"management_rc_car\stm32f1xx_hal_dma.o"
+"management_rc_car\stm32f1xx_hal_cortex.o"
+"management_rc_car\stm32f1xx_hal_pwr.o"
+"management_rc_car\stm32f1xx_hal_flash.o"
+"management_rc_car\stm32f1xx_hal_flash_ex.o"
+"management_rc_car\stm32f1xx_hal_exti.o"
+"management_rc_car\stm32f1xx_hal_uart.o"
+"management_rc_car\system_stm32f1xx.o"
+--strict --scatter "management_rc_car\management_rc_car.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "management_rc_car.map" -o management_rc_car\management_rc_car.axf

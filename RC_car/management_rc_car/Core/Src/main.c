@@ -125,13 +125,13 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		//__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3, 1000);
-		servo_val = message[0]|(message[1]<<8)|(message[2]<<16)|(message[3]<<24);
+		__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2, 1000);
+		/*servo_val = message[0]|(message[1]<<8)|(message[2]<<16)|(message[3]<<24);
 		motor_val = message[4]|(message[5]<<8)|(message[6]<<16)|(message[7]<<24);
 		HAL_Delay(10);
 		uint16_t angle = 180 - (servo_val * 180)/ 1024;
 		speed_regulation(motor_val);
-		servo_rotate(angle);
+		servo_rotate(angle);*/
 		
     /* USER CODE END WHILE */
 
@@ -198,7 +198,7 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 16 - 1;
+  htim2.Init.Prescaler = 18 - 1;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim2.Init.Period = 2300 - 1;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
@@ -223,7 +223,7 @@ static void MX_TIM2_Init(void)
     Error_Handler();
   }
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 50;
+  sConfigOC.Pulse = 1150;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
   if (HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
