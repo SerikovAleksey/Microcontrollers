@@ -83,10 +83,10 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 CMakeFiles/BSP.dir/C_/Program_Files_(x86)/Sysprogs/VisualGDB/CMake/embedded/dummy.c.obj
  .debug_macro   0x00000000       0x11 CMakeFiles/BSP.dir/C_/Program_Files_(x86)/Sysprogs/VisualGDB/CMake/embedded/dummy.c.obj
- .debug_macro   0x00000000      0xab4 CMakeFiles/BSP.dir/C_/Program_Files_(x86)/Sysprogs/VisualGDB/CMake/embedded/dummy.c.obj
+ .debug_macro   0x00000000      0xa9c CMakeFiles/BSP.dir/C_/Program_Files_(x86)/Sysprogs/VisualGDB/CMake/embedded/dummy.c.obj
  .debug_line    0x00000000       0x61 CMakeFiles/BSP.dir/C_/Program_Files_(x86)/Sysprogs/VisualGDB/CMake/embedded/dummy.c.obj
- .debug_str     0x00000000     0x2df9 CMakeFiles/BSP.dir/C_/Program_Files_(x86)/Sysprogs/VisualGDB/CMake/embedded/dummy.c.obj
- .comment       0x00000000       0x56 CMakeFiles/BSP.dir/C_/Program_Files_(x86)/Sysprogs/VisualGDB/CMake/embedded/dummy.c.obj
+ .debug_str     0x00000000     0x2d9f CMakeFiles/BSP.dir/C_/Program_Files_(x86)/Sysprogs/VisualGDB/CMake/embedded/dummy.c.obj
+ .comment       0x00000000       0x46 CMakeFiles/BSP.dir/C_/Program_Files_(x86)/Sysprogs/VisualGDB/CMake/embedded/dummy.c.obj
  .ARM.attributes
                 0x00000000       0x2d CMakeFiles/BSP.dir/C_/Program_Files_(x86)/Sysprogs/VisualGDB/CMake/embedded/dummy.c.obj
  .group         0x00000000        0xc CMakeFiles/led-lamp.dir/src/led.c.obj
@@ -130,6 +130,7 @@ Discarded input sections
  .bss           0x00000000        0x0 CMakeFiles/led-lamp.dir/src/led.c.obj
  .bss.state     0x00000000        0x1 CMakeFiles/led-lamp.dir/src/led.c.obj
  .bss.d         0x00000000        0x4 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00000000      0xa9c CMakeFiles/led-lamp.dir/src/led.c.obj
  .text          0x00000000       0x14 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
  .data          0x00000000        0x0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
  .bss           0x00000000        0x0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
@@ -2722,7 +2723,7 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn
                 0x08000000                g_pfnVectors
                 0x0800010c                        . = ALIGN (0x4)
 
-.text           0x0800010c     0x37b0
+.text           0x0800010c     0x3830
                 0x0800010c                        . = ALIGN (0x4)
  *(.text)
  .text          0x0800010c       0xec c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcpy.o)
@@ -2763,357 +2764,357 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn
  .text.Min      0x080008e4      0x284 CMakeFiles/led-lamp.dir/src/led.c.obj
                 0x080008e4                Min
  .text.light_regulator
-                0x08000b68      0x380 CMakeFiles/led-lamp.dir/src/led.c.obj
+                0x08000b68      0x3b4 CMakeFiles/led-lamp.dir/src/led.c.obj
                 0x08000b68                light_regulator
  .text.Reset_Handler
-                0x08000ee8       0x48 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
-                0x08000ee8                Reset_Handler
+                0x08000f1c       0x48 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
+                0x08000f1c                Reset_Handler
  .text.Default_Handler
-                0x08000f30        0x2 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
-                0x08000f30                RTC_Alarm_IRQHandler
-                0x08000f30                TIM1_CC_IRQHandler
-                0x08000f30                PVD_IRQHandler
-                0x08000f30                EXTI3_IRQHandler
-                0x08000f30                EXTI0_IRQHandler
-                0x08000f30                ADC1_2_IRQHandler
-                0x08000f30                SPI1_IRQHandler
-                0x08000f30                TAMPER_IRQHandler
-                0x08000f30                DMA1_Channel4_IRQHandler
-                0x08000f30                RTC_IRQHandler
-                0x08000f30                DMA1_Channel7_IRQHandler
-                0x08000f30                CAN1_RX1_IRQHandler
-                0x08000f30                I2C1_EV_IRQHandler
-                0x08000f30                DMA1_Channel6_IRQHandler
-                0x08000f30                TIM3_IRQHandler
-                0x08000f30                RCC_IRQHandler
-                0x08000f30                TIM1_TRG_COM_IRQHandler
-                0x08000f30                DMA1_Channel1_IRQHandler
-                0x08000f30                Default_Handler
-                0x08000f30                EXTI15_10_IRQHandler
-                0x08000f30                EXTI9_5_IRQHandler
-                0x08000f30                DMA1_Channel5_IRQHandler
-                0x08000f30                EXTI4_IRQHandler
-                0x08000f30                USB_LP_CAN1_RX0_IRQHandler
-                0x08000f30                USB_HP_CAN1_TX_IRQHandler
-                0x08000f30                DMA1_Channel3_IRQHandler
-                0x08000f30                TIM1_UP_IRQHandler
-                0x08000f30                WWDG_IRQHandler
-                0x08000f30                TIM2_IRQHandler
-                0x08000f30                TIM1_BRK_IRQHandler
-                0x08000f30                EXTI1_IRQHandler
-                0x08000f30                USART2_IRQHandler
-                0x08000f30                CAN1_SCE_IRQHandler
-                0x08000f30                FLASH_IRQHandler
-                0x08000f30                USART1_IRQHandler
-                0x08000f30                I2C1_ER_IRQHandler
-                0x08000f30                USBWakeUp_IRQHandler
- *fill*         0x08000f32        0x2 
+                0x08000f64        0x2 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
+                0x08000f64                RTC_Alarm_IRQHandler
+                0x08000f64                TIM1_CC_IRQHandler
+                0x08000f64                PVD_IRQHandler
+                0x08000f64                EXTI3_IRQHandler
+                0x08000f64                EXTI0_IRQHandler
+                0x08000f64                ADC1_2_IRQHandler
+                0x08000f64                SPI1_IRQHandler
+                0x08000f64                TAMPER_IRQHandler
+                0x08000f64                DMA1_Channel4_IRQHandler
+                0x08000f64                RTC_IRQHandler
+                0x08000f64                DMA1_Channel7_IRQHandler
+                0x08000f64                CAN1_RX1_IRQHandler
+                0x08000f64                I2C1_EV_IRQHandler
+                0x08000f64                DMA1_Channel6_IRQHandler
+                0x08000f64                TIM3_IRQHandler
+                0x08000f64                RCC_IRQHandler
+                0x08000f64                TIM1_TRG_COM_IRQHandler
+                0x08000f64                DMA1_Channel1_IRQHandler
+                0x08000f64                Default_Handler
+                0x08000f64                EXTI15_10_IRQHandler
+                0x08000f64                EXTI9_5_IRQHandler
+                0x08000f64                DMA1_Channel5_IRQHandler
+                0x08000f64                EXTI4_IRQHandler
+                0x08000f64                USB_LP_CAN1_RX0_IRQHandler
+                0x08000f64                USB_HP_CAN1_TX_IRQHandler
+                0x08000f64                DMA1_Channel3_IRQHandler
+                0x08000f64                TIM1_UP_IRQHandler
+                0x08000f64                WWDG_IRQHandler
+                0x08000f64                TIM2_IRQHandler
+                0x08000f64                TIM1_BRK_IRQHandler
+                0x08000f64                EXTI1_IRQHandler
+                0x08000f64                USART2_IRQHandler
+                0x08000f64                CAN1_SCE_IRQHandler
+                0x08000f64                FLASH_IRQHandler
+                0x08000f64                USART1_IRQHandler
+                0x08000f64                I2C1_ER_IRQHandler
+                0x08000f64                USBWakeUp_IRQHandler
+ *fill*         0x08000f66        0x2 
  .text.HAL_GPIO_EXTI_Callback
-                0x08000f34       0x40 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
-                0x08000f34                HAL_GPIO_EXTI_Callback
- .text.main     0x08000f74      0x224 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
-                0x08000f74                main
+                0x08000f68       0x40 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
+                0x08000f68                HAL_GPIO_EXTI_Callback
+ .text.main     0x08000fa8      0x26c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
+                0x08000fa8                main
  .text.SystemClock_Config
-                0x08001198       0x8a CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
-                0x08001198                SystemClock_Config
+                0x08001214       0x8a CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
+                0x08001214                SystemClock_Config
  .text.Error_Handler
-                0x08001222        0xa CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
-                0x08001222                Error_Handler
+                0x0800129e        0xa CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
+                0x0800129e                Error_Handler
  .text.HAL_Init
-                0x0800122c       0x2c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x0800122c                HAL_Init
+                0x080012a8       0x2c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x080012a8                HAL_Init
  .text.HAL_InitTick
-                0x08001258       0x60 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08001258                HAL_InitTick
+                0x080012d4       0x60 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x080012d4                HAL_InitTick
  .text.HAL_IncTick
-                0x080012b8       0x24 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080012b8                HAL_IncTick
+                0x08001334       0x24 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08001334                HAL_IncTick
  .text.HAL_GetTick
-                0x080012dc       0x14 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080012dc                HAL_GetTick
+                0x08001358       0x14 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08001358                HAL_GetTick
  .text.HAL_Delay
-                0x080012f0       0x48 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080012f0                HAL_Delay
+                0x0800136c       0x48 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x0800136c                HAL_Delay
  .text.__NVIC_SetPriorityGrouping
-                0x08001338       0x48 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080013b4       0x48 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.__NVIC_GetPriorityGrouping
-                0x08001380       0x1c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080013fc       0x1c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.__NVIC_EnableIRQ
-                0x0800139c       0x38 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001418       0x38 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x080013d4       0x54 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001450       0x54 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x08001428       0x64 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080014a4       0x64 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.SysTick_Config
-                0x0800148c       0x44 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001508       0x44 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.HAL_NVIC_SetPriorityGrouping
-                0x080014d0       0x16 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x080014d0                HAL_NVIC_SetPriorityGrouping
+                0x0800154c       0x16 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x0800154c                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x080014e6       0x38 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x080014e6                HAL_NVIC_SetPriority
+                0x08001562       0x38 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001562                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x0800151e       0x1c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x0800151e                HAL_NVIC_EnableIRQ
+                0x0800159a       0x1c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x0800159a                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x0800153a       0x18 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x0800153a                HAL_SYSTICK_Config
- *fill*         0x08001552        0x2 
+                0x080015b6       0x18 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080015b6                HAL_SYSTICK_Config
+ *fill*         0x080015ce        0x2 
  .text.HAL_DMA_Init
-                0x08001554       0xb4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x08001554                HAL_DMA_Init
+                0x080015d0       0xb4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x080015d0                HAL_DMA_Init
  .text.HAL_DMA_Start_IT
-                0x08001608       0xc0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x08001608                HAL_DMA_Start_IT
+                0x08001684       0xc0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x08001684                HAL_DMA_Start_IT
  .text.HAL_DMA_IRQHandler
-                0x080016c8      0x20c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x080016c8                HAL_DMA_IRQHandler
+                0x08001744      0x20c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x08001744                HAL_DMA_IRQHandler
  .text.DMA_SetConfig
-                0x080018d4       0x5a CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- *fill*         0x0800192e        0x2 
+                0x08001950       0x5a CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ *fill*         0x080019aa        0x2 
  .text.HAL_GPIO_Init
-                0x08001930      0x2f8 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08001930                HAL_GPIO_Init
+                0x080019ac      0x2f8 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x080019ac                HAL_GPIO_Init
  .text.HAL_GPIO_ReadPin
-                0x08001c28       0x2e CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08001c28                HAL_GPIO_ReadPin
+                0x08001ca4       0x2e CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08001ca4                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x08001c56       0x30 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08001c56                HAL_GPIO_WritePin
- *fill*         0x08001c86        0x2 
+                0x08001cd2       0x30 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08001cd2                HAL_GPIO_WritePin
+ *fill*         0x08001d02        0x2 
  .text.HAL_GPIO_EXTI_IRQHandler
-                0x08001c88       0x30 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08001c88                HAL_GPIO_EXTI_IRQHandler
+                0x08001d04       0x30 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08001d04                HAL_GPIO_EXTI_IRQHandler
  .text.HAL_RCC_OscConfig
-                0x08001cb8      0x504 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08001cb8                HAL_RCC_OscConfig
+                0x08001d34      0x504 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08001d34                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x080021bc      0x1d4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x080021bc                HAL_RCC_ClockConfig
+                0x08002238      0x1d4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08002238                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08002390       0xa8 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002390                HAL_RCC_GetSysClockFreq
+                0x0800240c       0xa8 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x0800240c                HAL_RCC_GetSysClockFreq
  .text.RCC_Delay
-                0x08002438       0x3c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080024b4       0x3c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .text.HAL_TIM_Base_Start
-                0x08002474       0x88 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002474                HAL_TIM_Base_Start
+                0x080024f0       0x88 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080024f0                HAL_TIM_Base_Start
  .text.HAL_TIM_OC_Init
-                0x080024fc       0x9e CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080024fc                HAL_TIM_OC_Init
+                0x08002578       0x9e CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002578                HAL_TIM_OC_Init
  .text.HAL_TIM_PWM_Init
-                0x0800259a       0x9e CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x0800259a                HAL_TIM_PWM_Init
+                0x08002616       0x9e CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002616                HAL_TIM_PWM_Init
  .text.HAL_TIM_PWM_Start_DMA
-                0x08002638      0x334 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002638                HAL_TIM_PWM_Start_DMA
+                0x080026b4      0x334 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080026b4                HAL_TIM_PWM_Start_DMA
  .text.HAL_TIM_OC_ConfigChannel
-                0x0800296c       0xb8 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x0800296c                HAL_TIM_OC_ConfigChannel
+                0x080029e8       0xb8 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080029e8                HAL_TIM_OC_ConfigChannel
  .text.HAL_TIM_PWM_ConfigChannel
-                0x08002a24      0x184 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002a24                HAL_TIM_PWM_ConfigChannel
+                0x08002aa0      0x184 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002aa0                HAL_TIM_PWM_ConfigChannel
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x08002ba8       0x12 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002ba8                HAL_TIM_PWM_PulseFinishedCallback
+                0x08002c24       0x12 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002c24                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_PWM_PulseFinishedHalfCpltCallback
-                0x08002bba       0x12 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002bba                HAL_TIM_PWM_PulseFinishedHalfCpltCallback
+                0x08002c36       0x12 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002c36                HAL_TIM_PWM_PulseFinishedHalfCpltCallback
  .text.HAL_TIM_ErrorCallback
-                0x08002bcc       0x12 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002bcc                HAL_TIM_ErrorCallback
+                0x08002c48       0x12 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002c48                HAL_TIM_ErrorCallback
  .text.TIM_DMAError
-                0x08002bde       0x92 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002bde                TIM_DMAError
+                0x08002c5a       0x92 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002c5a                TIM_DMAError
  .text.TIM_DMADelayPulseCplt
-                0x08002c70       0xa8 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002cec       0xa8 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_DMADelayPulseHalfCplt
-                0x08002d18       0x68 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002d18                TIM_DMADelayPulseHalfCplt
+                0x08002d94       0x68 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002d94                TIM_DMADelayPulseHalfCplt
  .text.TIM_Base_SetConfig
-                0x08002d80       0xb0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002d80                TIM_Base_SetConfig
+                0x08002dfc       0xb0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002dfc                TIM_Base_SetConfig
  .text.TIM_OC1_SetConfig
-                0x08002e30       0xcc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002eac       0xcc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_OC2_SetConfig
-                0x08002efc       0xd4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002efc                TIM_OC2_SetConfig
+                0x08002f78       0xd4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002f78                TIM_OC2_SetConfig
  .text.TIM_OC3_SetConfig
-                0x08002fd0       0xd4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800304c       0xd4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_OC4_SetConfig
-                0x080030a4       0x9c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003120       0x9c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_CCxChannelCmd
-                0x08003140       0x48 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003140                TIM_CCxChannelCmd
+                0x080031bc       0x48 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080031bc                TIM_CCxChannelCmd
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08003188       0xb0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08003188                HAL_TIMEx_MasterConfigSynchronization
+                0x08003204       0xb0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08003204                HAL_TIMEx_MasterConfigSynchronization
  .text.MX_DMA_Init
-                0x08003238       0x3c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/dma.c.obj
-                0x08003238                MX_DMA_Init
+                0x080032b4       0x3c CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/dma.c.obj
+                0x080032b4                MX_DMA_Init
  .text.MX_GPIO_Init
-                0x08003274       0xc0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/gpio.c.obj
-                0x08003274                MX_GPIO_Init
+                0x080032f0       0xc0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/gpio.c.obj
+                0x080032f0                MX_GPIO_Init
  .text.HAL_MspInit
-                0x08003334       0x64 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x08003334                HAL_MspInit
+                0x080033b0       0x64 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x080033b0                HAL_MspInit
  .text.NMI_Handler
-                0x08003398        0x6 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
-                0x08003398                NMI_Handler
+                0x08003414        0x6 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+                0x08003414                NMI_Handler
  .text.HardFault_Handler
-                0x0800339e        0x6 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
-                0x0800339e                HardFault_Handler
+                0x0800341a        0x6 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+                0x0800341a                HardFault_Handler
  .text.MemManage_Handler
-                0x080033a4        0x6 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
-                0x080033a4                MemManage_Handler
+                0x08003420        0x6 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+                0x08003420                MemManage_Handler
  .text.BusFault_Handler
-                0x080033aa        0x6 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
-                0x080033aa                BusFault_Handler
+                0x08003426        0x6 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+                0x08003426                BusFault_Handler
  .text.UsageFault_Handler
-                0x080033b0        0x6 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
-                0x080033b0                UsageFault_Handler
+                0x0800342c        0x6 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+                0x0800342c                UsageFault_Handler
  .text.SVC_Handler
-                0x080033b6        0xc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
-                0x080033b6                SVC_Handler
+                0x08003432        0xc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+                0x08003432                SVC_Handler
  .text.DebugMon_Handler
-                0x080033c2        0xc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
-                0x080033c2                DebugMon_Handler
+                0x0800343e        0xc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+                0x0800343e                DebugMon_Handler
  .text.PendSV_Handler
-                0x080033ce        0xc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
-                0x080033ce                PendSV_Handler
+                0x0800344a        0xc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+                0x0800344a                PendSV_Handler
  .text.SysTick_Handler
-                0x080033da        0xc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
-                0x080033da                SysTick_Handler
+                0x08003456        0xc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+                0x08003456                SysTick_Handler
  .text.EXTI2_IRQHandler
-                0x080033e6        0xe CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
-                0x080033e6                EXTI2_IRQHandler
+                0x08003462        0xe CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+                0x08003462                EXTI2_IRQHandler
  .text.DMA1_Channel2_IRQHandler
-                0x080033f4       0x14 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
-                0x080033f4                DMA1_Channel2_IRQHandler
+                0x08003470       0x14 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+                0x08003470                DMA1_Channel2_IRQHandler
  .text.SystemInit
-                0x08003408        0xc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/system_stm32f1xx.c.obj
-                0x08003408                SystemInit
+                0x08003484        0xc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/system_stm32f1xx.c.obj
+                0x08003484                SystemInit
  .text.MX_TIM2_Init
-                0x08003414       0xb0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
-                0x08003414                MX_TIM2_Init
+                0x08003490       0xb4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
+                0x08003490                MX_TIM2_Init
  .text.MX_TIM3_Init
-                0x080034c4       0xb0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
-                0x080034c4                MX_TIM3_Init
+                0x08003544       0xb0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
+                0x08003544                MX_TIM3_Init
  .text.HAL_TIM_OC_MspInit
-                0x08003574       0x38 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
-                0x08003574                HAL_TIM_OC_MspInit
+                0x080035f4       0x38 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
+                0x080035f4                HAL_TIM_OC_MspInit
  .text.HAL_TIM_PWM_MspInit
-                0x080035ac       0x94 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
-                0x080035ac                HAL_TIM_PWM_MspInit
+                0x0800362c       0x94 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
+                0x0800362c                HAL_TIM_PWM_MspInit
  .text.HAL_TIM_MspPostInit
-                0x08003640       0xa4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
-                0x08003640                HAL_TIM_MspPostInit
- .text.memset   0x080036e4       0xa0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
-                0x080036e4                memset
+                0x080036c0       0xa4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
+                0x080036c0                HAL_TIM_MspPostInit
+ .text.memset   0x08003764       0xa0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
+                0x08003764                memset
  .text.__libc_init_array
-                0x08003784       0x50 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
-                0x08003784                __libc_init_array
+                0x08003804       0x50 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
+                0x08003804                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x080037d4        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
-                0x080037d4                __retarget_lock_acquire_recursive
+                0x08003854        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+                0x08003854                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x080037d8        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
-                0x080037d8                __retarget_lock_release_recursive
+                0x08003858        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+                0x08003858                __retarget_lock_release_recursive
  .text.startup.register_fini
-                0x080037dc       0x14 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
- .text.atexit   0x080037f0        0xc c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
-                0x080037f0                atexit
+                0x0800385c       0x14 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+ .text.atexit   0x08003870        0xc c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
+                0x08003870                atexit
  .text.__libc_fini_array
-                0x080037fc       0x28 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
-                0x080037fc                __libc_fini_array
+                0x0800387c       0x28 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
+                0x0800387c                __libc_fini_array
  .text.__register_exitproc
-                0x08003824       0x80 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
-                0x08003824                __register_exitproc
+                0x080038a4       0x80 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
+                0x080038a4                __register_exitproc
  *(.glue_7)
- .glue_7        0x080038a4        0x0 linker stubs
+ .glue_7        0x08003924        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080038a4        0x0 linker stubs
+ .glue_7t       0x08003924        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x080038a4        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x08003924        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x080038a4        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
-                0x080038a4                _init
- .init          0x080038a8        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x08003924        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
+                0x08003924                _init
+ .init          0x08003928        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x080038b0        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
-                0x080038b0                _fini
- .fini          0x080038b4        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
-                0x080038bc                        . = ALIGN (0x4)
-                0x080038bc                        _etext = .
+ .fini          0x08003930        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
+                0x08003930                _fini
+ .fini          0x08003934        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+                0x0800393c                        . = ALIGN (0x4)
+                0x0800393c                        _etext = .
 
-.vfp11_veneer   0x080038bc        0x0
- .vfp11_veneer  0x080038bc        0x0 linker stubs
+.vfp11_veneer   0x0800393c        0x0
+ .vfp11_veneer  0x0800393c        0x0 linker stubs
 
-.v4_bx          0x080038bc        0x0
- .v4_bx         0x080038bc        0x0 linker stubs
+.v4_bx          0x0800393c        0x0
+ .v4_bx         0x0800393c        0x0 linker stubs
 
-.iplt           0x080038bc        0x0
- .iplt          0x080038bc        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x0800393c        0x0
+ .iplt          0x0800393c        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x080038bc       0x24
-                0x080038bc                        . = ALIGN (0x4)
+.rodata         0x0800393c       0x24
+                0x0800393c                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.aPLLMULFactorTable.1
-                0x080038bc       0x10 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x0800393c       0x10 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .rodata.aPredivFactorTable.0
-                0x080038cc        0x2 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x080038ce        0x2 
+                0x0800394c        0x2 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x0800394e        0x2 
  .rodata.AHBPrescTable
-                0x080038d0       0x10 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/system_stm32f1xx.c.obj
-                0x080038d0                AHBPrescTable
-                0x080038e0                        . = ALIGN (0x4)
+                0x08003950       0x10 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/system_stm32f1xx.c.obj
+                0x08003950                AHBPrescTable
+                0x08003960                        . = ALIGN (0x4)
 
-.ARM.extab      0x080038e0        0x0
-                0x080038e0                        . = ALIGN (0x4)
+.ARM.extab      0x08003960        0x0
+                0x08003960                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x080038e0                        . = ALIGN (0x4)
+                0x08003960                        . = ALIGN (0x4)
 
-.ARM            0x080038e0        0x8
-                0x080038e0                        . = ALIGN (0x4)
-                0x080038e0                        __exidx_start = .
+.ARM            0x08003960        0x8
+                0x08003960                        . = ALIGN (0x4)
+                0x08003960                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x080038e0        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcpy.o)
-                0x080038e8                        __exidx_end = .
-                0x080038e8                        . = ALIGN (0x4)
+ .ARM.exidx     0x08003960        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcpy.o)
+                0x08003968                        __exidx_end = .
+                0x08003968                        . = ALIGN (0x4)
 
-.rel.dyn        0x080038e8        0x0
- .rel.iplt      0x080038e8        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x08003968        0x0
+ .rel.iplt      0x08003968        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.preinit_array  0x080038e8        0x0
-                0x080038e8                        . = ALIGN (0x4)
-                0x080038e8                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08003968        0x0
+                0x08003968                        . = ALIGN (0x4)
+                0x08003968                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080038e8                        PROVIDE (__preinit_array_end = .)
-                0x080038e8                        . = ALIGN (0x4)
+                0x08003968                        PROVIDE (__preinit_array_end = .)
+                0x08003968                        . = ALIGN (0x4)
 
-.init_array     0x080038e8        0x8
-                0x080038e8                        . = ALIGN (0x4)
-                0x080038e8                        PROVIDE (__init_array_start = .)
+.init_array     0x08003968        0x8
+                0x08003968                        . = ALIGN (0x4)
+                0x08003968                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x080038e8        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+                0x08003968        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x080038ec        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x080038f0                        PROVIDE (__init_array_end = .)
-                0x080038f0                        . = ALIGN (0x4)
+ .init_array    0x0800396c        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x08003970                        PROVIDE (__init_array_end = .)
+                0x08003970                        . = ALIGN (0x4)
 
-.fini_array     0x080038f0        0x4
-                0x080038f0                        . = ALIGN (0x4)
-                0x080038f0                        PROVIDE (__fini_array_start = .)
+.fini_array     0x08003970        0x4
+                0x08003970                        . = ALIGN (0x4)
+                0x08003970                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080038f0        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x080038f4                        PROVIDE (__fini_array_end = .)
-                0x080038f4                        . = ALIGN (0x4)
-                0x080038f4                        _sidata = LOADADDR (.data)
+ .fini_array    0x08003970        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x08003974                        PROVIDE (__fini_array_end = .)
+                0x08003974                        . = ALIGN (0x4)
+                0x08003974                        _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x14 load address 0x080038f4
+.data           0x20000000       0x14 load address 0x08003974
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -3140,17 +3141,17 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn
                 0x20000014                        _edata = .
 
 .tm_clone_table
-                0x20000014        0x0 load address 0x08003908
+                0x20000014        0x0 load address 0x08003988
  .tm_clone_table
                 0x20000014        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000014        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtend.o
 
-.igot.plt       0x20000014        0x0 load address 0x08003908
+.igot.plt       0x20000014        0x0 load address 0x08003988
  .igot.plt      0x20000014        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x20000014                        . = ALIGN (0x4)
 
-.bss            0x20000014      0x498 load address 0x08003908
+.bss            0x20000014      0x498 load address 0x08003988
                 0x20000014                        _sbss = .
                 0x20000014                        __bss_start__ = _sbss
  *(.bss)
@@ -3211,7 +3212,7 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn
                 0x200004ac                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200004ac      0x604 load address 0x08003908
+                0x200004ac      0x604 load address 0x08003988
                 0x200004b0                        . = ALIGN (0x8)
  *fill*         0x200004ac        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -3292,41 +3293,41 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libc
 LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libm.a
 LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0x918a
- .debug_info    0x00000000      0xb10 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_info    0x00000b10       0x30 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
- .debug_info    0x00000b40      0x9fb CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
- .debug_info    0x0000153b      0x6df CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_info    0x00001c1a      0xa62 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_info    0x0000267c      0x6cb CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_info    0x00002d47      0x5a4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_info    0x000032eb      0x7ce CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_info    0x00003ab9     0x2934 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_info    0x000063ed     0x1494 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_info    0x00007881      0x2aa CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/dma.c.obj
- .debug_info    0x00007b2b      0x40d CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/gpio.c.obj
- .debug_info    0x00007f38      0x1ea CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x00008122      0x391 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
- .debug_info    0x000084b3      0x21b CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/system_stm32f1xx.c.obj
- .debug_info    0x000086ce      0xabc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
+.debug_info     0x00000000     0x91af
+ .debug_info    0x00000000      0xb20 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_info    0x00000b20       0x30 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
+ .debug_info    0x00000b50      0xa10 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
+ .debug_info    0x00001560      0x6df CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_info    0x00001c3f      0xa62 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_info    0x000026a1      0x6cb CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_info    0x00002d6c      0x5a4 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_info    0x00003310      0x7ce CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_info    0x00003ade     0x2934 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_info    0x00006412     0x1494 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_info    0x000078a6      0x2aa CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/dma.c.obj
+ .debug_info    0x00007b50      0x40d CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/gpio.c.obj
+ .debug_info    0x00007f5d      0x1ea CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x00008147      0x391 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+ .debug_info    0x000084d8      0x21b CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/system_stm32f1xx.c.obj
+ .debug_info    0x000086f3      0xabc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
 
-.debug_abbrev   0x00000000     0x1e97
- .debug_abbrev  0x00000000      0x2ee CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_abbrev  0x000002ee       0x24 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
- .debug_abbrev  0x00000312      0x2be CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
- .debug_abbrev  0x000005d0      0x201 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_abbrev  0x000007d1      0x2f8 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_abbrev  0x00000ac9      0x20b CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_abbrev  0x00000cd4      0x1ca CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_abbrev  0x00000e9e      0x2b3 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_abbrev  0x00001151      0x277 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_abbrev  0x000013c8      0x282 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_abbrev  0x0000164a       0xfc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/dma.c.obj
- .debug_abbrev  0x00001746      0x161 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/gpio.c.obj
- .debug_abbrev  0x000018a7       0xdb CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_abbrev  0x00001982      0x183 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
- .debug_abbrev  0x00001b05      0x13f CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/system_stm32f1xx.c.obj
- .debug_abbrev  0x00001c44      0x253 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
+.debug_abbrev   0x00000000     0x1ea9
+ .debug_abbrev  0x00000000      0x2ff CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_abbrev  0x000002ff       0x24 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
+ .debug_abbrev  0x00000323      0x2bf CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
+ .debug_abbrev  0x000005e2      0x201 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_abbrev  0x000007e3      0x2f8 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_abbrev  0x00000adb      0x20b CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_abbrev  0x00000ce6      0x1ca CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_abbrev  0x00000eb0      0x2b3 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_abbrev  0x00001163      0x277 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_abbrev  0x000013da      0x282 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_abbrev  0x0000165c       0xfc CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/dma.c.obj
+ .debug_abbrev  0x00001758      0x161 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/gpio.c.obj
+ .debug_abbrev  0x000018b9       0xdb CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_abbrev  0x00001994      0x183 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+ .debug_abbrev  0x00001b17      0x13f CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/system_stm32f1xx.c.obj
+ .debug_abbrev  0x00001c56      0x253 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
 
 .debug_aranges  0x00000000      0xa98
  .debug_aranges
@@ -3397,81 +3398,80 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg
  .debug_rnglists
                 0x000007e6       0x3b CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
 
-.debug_macro    0x00000000    0x16a97
+.debug_macro    0x00000000    0x15ffb
  .debug_macro   0x00000000      0x1a0 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x000001a0      0xa9c CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00000c3c      0x21b CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00000e57       0x2e CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00000e85       0x22 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00000ea7       0x22 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00000ec9       0x56 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00000f1f       0x51 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00000f70      0x103 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00001073       0x6a CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x000010dd      0x1df CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x000012bc       0x1c CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x000012d8       0x22 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x000012fa       0xbd CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x000013b7      0xd23 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x000020da     0xde75 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x0000ff4f       0x6d CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x0000ffbc     0x348d CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00013449      0x182 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x000135cb       0x5c CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00013627      0x5bc CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00013be3      0x1b7 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00013d9a      0x1cb CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00013f65      0x114 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00014079      0x1b2 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x0001422b       0x27 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00014252      0x12f CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00014381      0x1bc CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x0001453d       0x34 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00014571       0x3c CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x000145ad       0x57 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x00014604       0x87 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x0001468b      0x183 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x0001480e      0x140 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x0001494e      0x8ed CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x0001523b       0x69 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x000152a4       0x34 CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_macro   0x000152d8      0x1d1 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
- .debug_macro   0x000154a9       0x2e CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
- .debug_macro   0x000154d7      0x1bb CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_macro   0x00015692      0x197 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_macro   0x00015829      0x197 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_macro   0x000159c0      0x202 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_macro   0x00015bc2      0x1a9 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_macro   0x00015d6b      0x198 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_macro   0x00015f03      0x197 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_macro   0x0001609a      0x1b0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/dma.c.obj
- .debug_macro   0x0001624a      0x1b0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/gpio.c.obj
- .debug_macro   0x000163fa      0x1a6 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_macro   0x000165a0      0x1b0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
- .debug_macro   0x00016750      0x197 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/system_stm32f1xx.c.obj
- .debug_macro   0x000168e7      0x1b0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
+ .debug_macro   0x000001a0      0x21b CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x000003bb       0x2e CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x000003e9       0x22 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x0000040b       0x22 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x0000042d       0x56 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00000483       0x51 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x000004d4      0x103 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x000005d7       0x6a CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00000641      0x1df CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00000820       0x1c CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x0000083c       0x22 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x0000085e       0xbd CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x0000091b      0xd23 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x0000163e     0xde75 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x0000f4b3       0x6d CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x0000f520     0x348d CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x000129ad      0x182 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00012b2f       0x5c CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00012b8b      0x5bc CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00013147      0x1b7 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x000132fe      0x1cb CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x000134c9      0x114 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x000135dd      0x1b2 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x0001378f       0x27 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x000137b6      0x12f CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x000138e5      0x1bc CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00013aa1       0x34 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00013ad5       0x3c CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00013b11       0x57 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00013b68       0x87 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00013bef      0x183 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00013d72      0x140 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00013eb2      0x8ed CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x0001479f       0x69 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x00014808       0x34 CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_macro   0x0001483c      0x1d1 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
+ .debug_macro   0x00014a0d       0x2e CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
+ .debug_macro   0x00014a3b      0x1bb CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_macro   0x00014bf6      0x197 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_macro   0x00014d8d      0x197 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_macro   0x00014f24      0x202 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_macro   0x00015126      0x1a9 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_macro   0x000152cf      0x198 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_macro   0x00015467      0x197 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_macro   0x000155fe      0x1b0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/dma.c.obj
+ .debug_macro   0x000157ae      0x1b0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/gpio.c.obj
+ .debug_macro   0x0001595e      0x1a6 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_macro   0x00015b04      0x1b0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+ .debug_macro   0x00015cb4      0x197 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/system_stm32f1xx.c.obj
+ .debug_macro   0x00015e4b      0x1b0 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
 
-.debug_line     0x00000000     0xabdc
- .debug_line    0x00000000      0xc1e CMakeFiles/led-lamp.dir/src/led.c.obj
- .debug_line    0x00000c1e       0x78 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
- .debug_line    0x00000c96      0x72e CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
- .debug_line    0x000013c4      0x76a CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_line    0x00001b2e      0x956 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_line    0x00002484      0xbc3 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_line    0x00003047      0x7ee CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_line    0x00003835      0xb73 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_line    0x000043a8     0x322b CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_line    0x000075d3     0x1699 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_line    0x00008c6c      0x4ba CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/dma.c.obj
- .debug_line    0x00009126      0x4d9 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/gpio.c.obj
- .debug_line    0x000095ff      0x4bf CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x00009abe      0x5b1 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
- .debug_line    0x0000a06f      0x53d CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/system_stm32f1xx.c.obj
- .debug_line    0x0000a5ac      0x630 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
+.debug_line     0x00000000     0xac1e
+ .debug_line    0x00000000      0xc3f CMakeFiles/led-lamp.dir/src/led.c.obj
+ .debug_line    0x00000c3f       0x78 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
+ .debug_line    0x00000cb7      0x74f CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj
+ .debug_line    0x00001406      0x76a CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_line    0x00001b70      0x956 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_line    0x000024c6      0xbc3 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_line    0x00003089      0x7ee CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_line    0x00003877      0xb73 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_line    0x000043ea     0x322b CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_line    0x00007615     0x1699 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_line    0x00008cae      0x4ba CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/dma.c.obj
+ .debug_line    0x00009168      0x4d9 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/gpio.c.obj
+ .debug_line    0x00009641      0x4bf CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x00009b00      0x5b1 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/stm32f1xx_it.c.obj
+ .debug_line    0x0000a0b1      0x53d CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/system_stm32f1xx.c.obj
+ .debug_line    0x0000a5ee      0x630 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/tim.c.obj
 
 .debug_str      0x00000000    0x8232a
  .debug_str     0x00000000    0x7f7d5 CMakeFiles/led-lamp.dir/src/led.c.obj
-                              0x7fbae (size before relaxing)
+                              0x7fbb4 (size before relaxing)
  .debug_str     0x0007f7d5       0x60 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Startup/startup_stm32f103c6tx.s.obj
                                  0x9c (size before relaxing)
  .debug_str     0x0007f835      0x351 CMakeFiles/led-lamp.dir/C_/Microcontrollers/led-lamp/common/Core/Src/main.c.obj

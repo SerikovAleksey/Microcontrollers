@@ -46,7 +46,7 @@ endfunction() #visualgdb_toolchain_compute_flags
 
 
 
-set (VISUALGDB_COMPONENT_LISTS_DIR "C:/Users/USER/AppData/Local/VisualGDB")
+set (VISUALGDB_COMPONENT_LISTS_DIR "C:/Users/Admin/AppData/Local/VisualGDB")
 if (NOT DEFINED VISUALGDB_BUILD_SYSTEM_ROOT)
 	set (VISUALGDB_BUILD_SYSTEM_ROOT "C:/Program Files (x86)/Sysprogs/VisualGDB/CMake/embedded")
 endif()

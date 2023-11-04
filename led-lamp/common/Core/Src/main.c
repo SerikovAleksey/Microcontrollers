@@ -120,17 +120,19 @@ int main(void)
 //	  moth();
 //	  HAL_Delay(1000);
 //	  color(6);
+	  uint16_t n = 0;
 	  if (HAL_GPIO_ReadPin(BUTTON_GPIO_Port, BUTTON_Pin))
 	  {
 		  uint32_t t0 = TIM2->CNT;
 		  while (HAL_GPIO_ReadPin(BUTTON_GPIO_Port, BUTTON_Pin))
 		  {
 			  if (TIM2->CNT > t0) time += TIM2->CNT - t0;
-			  else time += t0 - TIM2->CNT;	
-			  if (time > 500)
+			  else time += 1999 + TIM2->CNT - t0;	
+			  if (time > 10000)
 			  {
 				  check = 1;
 				  flag = 1;
+				  n = Button;
 				  if (s == 0 && Button != 1) 
 				  {
 					  light_regulator(0);
@@ -140,21 +142,25 @@ int main(void)
 					  light_regulator(1);
 				  }
 			  }
-			  
 				  HAL_Delay(5);
 		  }
-		  if (time < 500)
+		  if (time < 10000)
 		  {
 			  time = 0;
 		  }
+		 
+		  time = 0;
+	  }
+	  
+	  if (flag == 1) {
 		  if (s == 1) 
 		  {
 			  s = 0;
 		  }
-		  else s = 1;
-		  time = 0;
-	  }
-	  if (flag == 1) {
+		  else
+		  {
+			  s = 1;
+		  } 
 		  Button--;
 		  flag = 0;
 	  }
@@ -169,38 +175,47 @@ int main(void)
 	  if (Button == 3 && check == 0) 
 	  {	
 		  color(0);
+		  s = 0;
 	  }
 	  if (Button == 4 && check == 0)
 	  {
 		  color(1);
+		  s = 0;
 	  }
 	  if (Button == 5 && check == 0)
 	  {
 		  color(2);
+		  s = 0;
 	  }
 	  if (Button == 6 && check == 0)
 	  {
 		  color(3);
+		  s = 0;
 	  }
 	  if (Button == 7 && check == 0)
 	  {
 		  color(4);
+		  s = 0;
 	  }
 	  if (Button == 8 && check == 0)
 	  {
 		  color(5);
+		  s = 0;
 	  }
 	  if (Button == 9 && check == 0)
 	  {
 		  color(6);
+		  s = 0;
 	  }
 	  if (Button == 10 && check == 0)
 	  {
 		  color(7);
+		  s = 0;
 	  }
 	  if (Button == 11 && check == 0)
 	  {
 		  color(8);
+		  s = 0;
 	  }
 	  HAL_Delay(100);
     /* USER CODE END WHILE */

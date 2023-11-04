@@ -270,11 +270,13 @@ uint8_t Min(uint16_t i,  uint8_t rgb_temp[][3])
 
 void light_regulator(uint8_t num)
 {
+	uint16_t delay = 10;
 	light = 1;
 	if (num == 0)
 	{
 		for(int i = 0; i < LED_COUNT;i++)
 		{
+			if (Min(i, rgb_temp) < 50) delay = 50;
 			if(rgb_temp[i][0] > 0) rgb_temp[i][0] -= rgb_temp[i][0] / Min(i, rgb_temp);
 			if(rgb_temp[i][1] > 0) rgb_temp[i][1] -= rgb_temp[i][1] / Min(i, rgb_temp);
 			if(rgb_temp[i][2] > 0) rgb_temp[i][2] -= rgb_temp[i][2] / Min(i, rgb_temp);
@@ -282,12 +284,13 @@ void light_regulator(uint8_t num)
 			rgb_value_to_buf(rgb_temp[i][0],rgb_temp[i][1], rgb_temp[i][2],i);
 		}
 		led_start();
-		HAL_Delay(10);
+		HAL_Delay(delay);
 	}
 	else
 	{
 		for(int i = 0;i < LED_COUNT;i++)
 		{
+			if (Min(i, rgb_temp) < 50) delay = 50;
 			if(rgb_temp[i][0] < 255 && rgb_temp[i][0] <= mid_buf[i][0]) rgb_temp[i][0] += mid_buf[i][0] / Min(i, mid_buf);
 			if(rgb_temp[i][1] < 255 && rgb_temp[i][1] <= mid_buf[i][1]) rgb_temp[i][1] += mid_buf[i][1] / Min(i, mid_buf);
 			if(rgb_temp[i][2] < 255 && rgb_temp[i][2] <= mid_buf[i][2]) rgb_temp[i][2] += mid_buf[i][2] / Min(i, mid_buf);
@@ -295,7 +298,7 @@ void light_regulator(uint8_t num)
 			rgb_value_to_buf(rgb_temp[i][0],rgb_temp[i][1], rgb_temp[i][2],i);
 		}
 		led_start();
-		HAL_Delay(10);
+		HAL_Delay(delay);
 	}
 	
 }
