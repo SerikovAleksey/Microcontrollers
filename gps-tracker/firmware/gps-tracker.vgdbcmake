@@ -19,9 +19,9 @@
     <ToolchainID>
       <ID>com.visualgdb.arm-eabi</ID>
       <Version>
-        <GCC>12.2.1</GCC>
-        <GDB>12.2</GDB>
-        <Revision>2</Revision>
+        <GCC>12.3.1</GCC>
+        <GDB>13.2</GDB>
+        <Revision>1</Revision>
       </Version>
     </ToolchainID>
     <RelativeSourceDirectory />
@@ -59,6 +59,7 @@
         <BuildAllTargetsInSubdir>false</BuildAllTargetsInSubdir>
         <FoldSingleItemPathLevels>true</FoldSingleItemPathLevels>
       </ProjectItemSettings>
+      <TargetSpecificSettings />
       <SetLDLibraryPathFromDependentArtifacts>true</SetLDLibraryPathFromDependentArtifacts>
       <ProjectGUID>bba65a7a-c431-43ea-a624-b5935118caae</ProjectGUID>
       <VirtualFolders />
@@ -85,6 +86,7 @@
     <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
   </CustomShortcuts>
   <UserDefinedVariables />
+  <ImportedPropertySheets />
   <CodeSense>
     <Enabled>Unknown</Enabled>
     <ExtraSettings>
@@ -97,6 +99,8 @@
       <Enabled>false</Enabled>
     </CodeAnalyzerSettings>
   </CodeSense>
+  <Configurations />
+  <ProgramArgumentsSuggestions />
   <Debug xsi:type="com.visualgdb.debug.embedded">
     <AdditionalStartupCommands />
     <AdditionalGDBSettings>

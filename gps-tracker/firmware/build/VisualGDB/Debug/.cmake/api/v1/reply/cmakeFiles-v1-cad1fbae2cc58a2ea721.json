@@ -42,12 +42,12 @@
 		},
 		{
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/FindFrameworks.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/FindFrameworks.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInitialize.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInitialize.cmake"
 		},
 		{
 			"isGenerated" : true,
@@ -64,106 +64,106 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInformation.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeGenericSystem.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeGenericSystem.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeInitializeConfigs.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeInitializeConfigs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Platform/Generic.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Platform/Generic.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeCInformation.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeCInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/GNU-C.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/GNU-C.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/GNU.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/GNU.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Platform/Generic.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Platform/Generic.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeCXXInformation.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeCXXInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/GNU-CXX.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/GNU-CXX.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/GNU.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/GNU.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Platform/Generic.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Platform/Generic.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeASMInformation.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/CMakeASMInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/GNU-ASM.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/GNU-ASM.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/GNU.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/CMake/share/cmake-3.20/Modules/Compiler/GNU.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "C:/Users/USER/AppData/Local/VisualGDB/FindBSP.cmake"
+			"path" : "C:/Users/Admin/AppData/Local/VisualGDB/FindBSP.cmake"
 		},
 		{
 			"path" : "bsp/BSP.cmake"

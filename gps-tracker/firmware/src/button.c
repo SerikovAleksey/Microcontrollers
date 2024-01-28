@@ -1,13 +1,42 @@
 #include "button.h"
 
-uint16_t Read_Button_Time_Push (uint16_t but_name, uint16_t t0)
+extern uint8_t push_on_off; // responsible for pressing the button to start recording coordinates
+extern uint8_t push_transmit; // responsible for pressing the button to transmit recording coordinates
+extern uint8_t push_make_point; //responsible for pressing the button to make special coordinates
+
+uint16_t Read_Button_Time_Push ()
 {
-	while (HAL_GPIO_ReadPin(BUT_TYPE, but_name))
-		{
-			t1 = TIM2->CNT;		
-		}
-	if (t1 >= t0) return t1 - t0;
-	if (t1 < t0) return t1 + 5000 - t0;
+	if (!HAL_GPIO_ReadPin(BUT_TYPE, BUT_ON_OFF))
+	{
+		t_on++;		
+	}
+	else
+	{
+		t_on = 0;
+	}
+	
+	if (!HAL_GPIO_ReadPin(BUT_TYPE, BUT_MAKE_POINT))
+	{
+		t_make++;		
+	}
+	else
+	{
+		t_make = 0;
+	}
+	
+	if (!HAL_GPIO_ReadPin(BUT_TYPE, BUT_TRANSMIT_DATA))
+	{
+		t_transmit++;		
+	}
+	else
+	{
+		t_transmit = 0;
+	}
+	
+	if (t_on >= 100 && t_on <= 500) push_on_off = 1;
+	if (t_on >= 1000) push_on_off = 2;
+	if (t_make >= 100 && t_make <= 500) push_make_point = 1;
+	if (t_transmit >= 100 && t_transmit <= 500) push_transmit = 1;
 } // ReadButton
 
 
@@ -23,3 +52,5 @@ void Delay(uint16_t time_ms)
 			else tt += TIM2->CNT + 5000 - t2;
 		}
 }
+
+

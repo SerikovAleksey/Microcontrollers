@@ -52,10 +52,9 @@
 
 /* USER CODE BEGIN PV */
 uint8_t rx_buffer[rx_buffer_size] = { 0, }; //received buffer
-
-uint8_t push_on_off = 0; // responsible for pressing the button to start recording coordinates
-uint8_t push_transmit = 0; // responsible for pressing the button to transmit recording coordinates
-uint8_t push_make_point = 0; //responsible for pressing the button to make special coordinates
+uint8_t push_on_off = 0;
+uint8_t push_transmit = 0; 
+uint8_t push_make_point = 0;
 
 //uint8_t check_power = 0;
 uint8_t check_capacity = 0; //responsible for flash-memory recording
@@ -98,33 +97,37 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 }
 
 
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-	uint16_t t0 = TIM2->CNT;
-	if (GPIO_Pin == BUT_ON_OFF) // on or off record track
-	{
-		
-		//HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, GPIO_PIN_SET);
-		if (Read_Button_Time_Push(GPIO_Pin, t0) < 200) push_on_off = 1;
-		
-		if (Read_Button_Time_Push(GPIO_Pin, t0) > 1000) push_on_off = 2;
-	}
-	
-	if (GPIO_Pin == BUT_MAKE_POINT) // make a point
-	{
-		
-		 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET);
-//		if (Read_Button_Time_Push(GPIO_Pin, t0) < 400) push_make_point = 1;
-	}
-	
-	if (GPIO_Pin == BUT_TRANSMIT_DATA) // send data
-	{
-		
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_11, GPIO_PIN_SET);
-//		if (Read_Button_Time_Push(GPIO_Pin, t0) < 400) push_transmit = 1;
-	}
-	
-}
+//void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+//{
+//	if (GPIO_Pin == BUT_ON_OFF) // on or off record track
+//	{
+//		uint16_t t0 = TIM2->CNT;
+//		//HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, GPIO_PIN_SET);
+//		uint16_t t1 = Read_Button_Time_Push(GPIO_Pin, t0);
+//		if (t1 < 1500) push_on_off = 1;
+//		
+//		if (Read_Button_Time_Push(GPIO_Pin, t0) > 3000) push_on_off = 2;
+//	}
+//	
+//	if (GPIO_Pin == BUT_MAKE_POINT) // make a point
+//	{
+//		uint16_t t0 = TIM2->CNT;
+////		 HAL_GPIO_WritePin(GPIOB, Yellow_led_Pin, GPIO_PIN_SET);
+//		if (Read_Button_Time_Push(GPIO_Pin, t0) < 1000) push_make_point = 1;
+//	}
+//	
+//	if (GPIO_Pin == BUT_TRANSMIT_DATA) // send data
+//	{
+//		uint16_t t0 = TIM2->CNT;
+////		HAL_GPIO_WritePin(GPIOB, Yellow_led_Pin, GPIO_PIN_SET);
+//		if (Read_Button_Time_Push(GPIO_Pin, t0) < 1000) push_transmit = 1;
+//	}
+//	
+//}
+
+
+
+
 /* USER CODE END 0 */
 
 /**
@@ -134,7 +137,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -161,103 +163,106 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	__HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE);
 	HAL_UART_Receive_IT(&huart1, (uint8_t*)rx_buffer, rx_buffer_size);
+	HAL_TIM_Base_Start_IT(&htim2);
+	
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	 
-//	  
-//	  uint8_t *buffer = get_transmit_buf().buf;
-//	  uint16_t size = get_transmit_buf().size;
-//	  uint16_t u16_size = 0;
+	  
+	  uint8_t *buffer = get_transmit_buf().buf;
+	  uint16_t size = get_transmit_buf().size;
+	  uint16_t u16_size = 0;
 		
-//	  if ((size / 2) % 2 != 0)	
-//	  {
-//		  u16_size = size / 2 + 1;
-//	  }
-//	  else u16_size = size / 2;
+	  if ((size / 2) % 2 != 0)	
+	  {
+		  u16_size = size / 2 + 1;
+	  }
+	  else u16_size = size / 2;
 //		
 //		
-//	  if (check_valid_data(rx_buffer) == -1 && !check_capacity) 
-//	  {
-//		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, GPIO_PIN_SET);
-//		 // Delay(300);
-//		  HAL_Delay(500);
-//		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, GPIO_PIN_RESET);
-//	  }
-//	  else if (check_valid_data(rx_buffer) && !push_on_off && !check_capacity)
-//	  {
-//		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
-//		  HAL_Delay(500);
-//		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
-//	  }
+	  if (check_valid_data(rx_buffer) == -1 && !check_capacity) 
+	  {
+		  HAL_GPIO_WritePin(GPIOB, Red_led_Pin, GPIO_PIN_SET);
+		 // Delay(300);
+		  HAL_Delay(500);
+		  HAL_GPIO_WritePin(GPIOB, Red_led_Pin, GPIO_PIN_RESET);
+		  HAL_Delay(500);
+	  }
+	  else if (check_valid_data(rx_buffer) && !push_on_off && !check_capacity)
+	  {
+		  HAL_GPIO_WritePin(GPIOB, Green_led_Pin, GPIO_PIN_SET);
+		  HAL_Delay(500);
+		  HAL_GPIO_WritePin(GPIOB, Green_led_Pin, GPIO_PIN_RESET);
+		  HAL_Delay(500);
+	  }
 //		
 //		
-//	  if (size >= 980 && size < 1010)
-//	  {
+	  if (size >= 980 && size < 1010)
+	  {
 //		  Save_Data(buf_u8_to_u16(buffer, size), u16_size + 1);
 //		  Save_Data(&amount_lists, 1);
-//		  set_ind_c(0);
-//		  set_ind_t(0);
-//		  amount_lists++;
-//	  } // save data on one page flash-memory
+		  set_ind_c(0);
+		  set_ind_t(0);
+		  amount_lists++;
+	  } // save data on one page flash-memory
 		
-	 // if (push_on_off == 1 && !push_make_point)
+	  if (push_on_off == 1 && !push_make_point)
 	  {
-
 		  nmea_handler(rx_buffer, AVERAGE);
-		  //HAL_Delay(1000);
-		  //HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
+		  HAL_Delay(1000);
+		  HAL_GPIO_WritePin(Green_led_GPIO_Port, Green_led_Pin, GPIO_PIN_SET);
 		  
 	  } // start receive data
-//	  if (check_valid_data(rx_buffer) == 1)
-//	  {
-//		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
-//	  }
-//	  if (push_on_off == 1 && push_make_point) 
-//	  {
-//		  nmea_handler(rx_buffer, SPECIAL);
-//		  push_make_point = 0;
-//		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
-//	  } // make a special point
-//	  //Delay(300);
-//	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
+	  
+	  if (check_valid_data(rx_buffer) == 1)
+	  {
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
+	  }
+	  if (push_on_off == 1 && push_make_point) 
+	  {
+		  nmea_handler(rx_buffer, SPECIAL);
+		  push_make_point = 0;
+		  HAL_GPIO_WritePin(GPIOB, Yellow_led_Pin, GPIO_PIN_SET);
+	  } // make a special point
+	  //Delay(300);
+	  HAL_GPIO_WritePin(GPIOB, Yellow_led_Pin, GPIO_PIN_RESET);
 		
 		
-//	  if (push_on_off == 2) 
-//	  {
-//		  Save_Data(buf_u8_to_u16(buffer, size), u16_size + 1);
-//		  Save_Data(&amount_lists, 1);
-//		  push_on_off = 0;
-//		  set_ind_c(0);
-//		  set_ind_t(0);
-//		  amount_lists++;
-//	  } //stop receive and save data 
+	  if (push_on_off == 2) 
+	  {
+		  Save_Data(buf_u8_to_u16(buffer, size), u16_size + 1);
+		  Save_Data(&amount_lists, 1);
+		  push_on_off = 0;
+		  set_ind_c(0);
+		  set_ind_t(0);
+		  amount_lists++;
+	  } //stop receive and save data 
 		
-//	  if (push_on_off == 0) 
-//	  {
-//		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
-//	  }
+	  if (push_on_off == 0) 
+	  {
+		  HAL_GPIO_WritePin(GPIOB, Green_led_Pin, GPIO_PIN_RESET);
+	  }
 		
-//	  if (push_transmit)
-//	  {
+	  if (push_transmit)
+	  {
 //		  uint16_t lists = 0;
 //		  if ((*((uint32_t*)(ADDR_AMOUNT_PAGES))) == 0xFF) lists = 0;
 //		  else lists = (*((uint32_t*)(ADDR_AMOUNT_PAGES)));
 //		  for (uint16_t i = 0; i < lists; i++)
 //		  {
-//			  uint32_t add = ((uint32_t)(ADDR_FLASH_PAGE_126 - ((uint32_t)(0x0000400 * (uint32_t)i))));
-//			  uint16_t len = (*((uint32_t*)(ADDR_FLASH_PAGE_126 - ((uint32_t)(0x0000400 * (uint32_t)i)))));
+//			  uint32_t add = ((uint32_t)(ADDR_FLASH_PAGE_START - ((uint32_t)(0x0000400 * (uint32_t)i))));
+//			  uint16_t len = (*((uint32_t*)(ADDR_FLASH_PAGE_START - ((uint32_t)(0x0000400 * (uint32_t)i)))));
 //			  transmit_data(buf_u16_to_u8(Read_Data(add, len), len), len * 2);
 //		  }
-//		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
-//		  Delay(1000);
-//		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
-//		  push_transmit = 0;
-//	  }
-//		
+		  HAL_GPIO_WritePin(GPIOB, Yellow_led_Pin, GPIO_PIN_SET);
+		  Delay(2000);
+		  HAL_GPIO_WritePin(GPIOB, Yellow_led_Pin, GPIO_PIN_RESET);
+		  push_transmit = 0;
+	  }
+		
 //	  if (address_list_now == ((uint32_t)0x08007800))
 //	  {
 //		  check_capacity = 1;
@@ -312,7 +317,13 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	if (htim->Instance == htim2.Instance)
+	{
+		Read_Button_Time_Push();
+	}
+}
 /* USER CODE END 4 */
 
 /**

@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<VisualGDBUserPreferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserDefinedVariableValues />
+  <DebugPreferences xsi:type="com.visualgdb.debug.embedded.preferences">
+    <CatchpointConfiguration>
+      <Exec>false</Exec>
+      <Fork>false</Fork>
+      <Vfork>false</Vfork>
+      <Syscalls />
+      <CXXCatchpoints />
+    </CatchpointConfiguration>
+    <MaskInterruptsWhileStepping>false</MaskInterruptsWhileStepping>
+    <MemoryWindowPreferences />
+    <e>
+      <e32>
+        <c>push_on_off</c>
+        <b>com.sysprogs.types.builtin.UInt8</b>
+        <f>true</f>
+        <e>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </e>
+        <h>false</h>
+        <g>false</g>
+        <a>false</a>
+      </e32>
+      <e32>
+        <c>push_make_point</c>
+        <b>com.sysprogs.types.builtin.UInt8</b>
+        <f>true</f>
+        <e>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </e>
+        <h>false</h>
+        <g>false</g>
+        <a>false</a>
+      </e32>
+      <e32>
+        <c>push_transmit</c>
+        <b>com.sysprogs.types.builtin.UInt8</b>
+        <f>true</f>
+        <e>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </e>
+        <h>false</h>
+        <g>false</g>
+        <a>false</a>
+      </e32>
+      <e32>
+        <c>t_on</c>
+        <b>com.sysprogs.types.builtin.UInt16</b>
+        <f>true</f>
+        <e>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </e>
+        <h>false</h>
+        <g>false</g>
+        <a>false</a>
+      </e32>
+      <e32>
+        <c>t_transmit</c>
+        <b>com.sysprogs.types.builtin.UInt16</b>
+        <f>true</f>
+        <e>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </e>
+        <h>false</h>
+        <g>false</g>
+        <a>false</a>
+      </e32>
+      <e32>
+        <c>t_make</c>
+        <b>com.sysprogs.types.builtin.UInt16</b>
+        <f>true</f>
+        <e>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </e>
+        <h>false</h>
+        <g>false</g>
+        <a>false</a>
+      </e32>
+    </e>
+    <b>
+      <a>
+        <a>com.sysprogs.AllGlobals</a>
+        <b />
+      </a>
+      <a>
+        <a>com.sysprogs.SpecificVariables</a>
+        <b />
+      </a>
+      <a>
+        <a>com.sysprogs.Custom</a>
+        <b />
+      </a>
+    </b>
+    <c>
+      <b>SpecificVariables</b>
+      <a>false</a>
+    </c>
+    <Suggestions />
+    <HardwareRegisters />
+  </DebugPreferences>
+</VisualGDBUserPreferences>
