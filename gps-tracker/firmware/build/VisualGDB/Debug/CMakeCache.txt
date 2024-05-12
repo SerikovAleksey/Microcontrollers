@@ -245,7 +245,7 @@ LOCALAPPDATA:UNINITIALIZED=C:/Users/Admin/AppData/Local
 PLATFORM:UNINITIALIZED=VisualGDB
 
 //No help, variable specified on the command line.
-TOOLCHAIN_ROOT:UNINITIALIZED=c:/sysgcc/arm-eabi
+TOOLCHAIN_ROOT:UNINITIALIZED=C:/SysGCC/arm-eabi
 
 //Value Computed by CMake
 gps-tracker_BINARY_DIR:STATIC=C:/Microcontrollers/gps-tracker/firmware/build/VisualGDB/Debug

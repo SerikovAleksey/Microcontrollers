@@ -1,2 +1,1 @@
-C:\Microcontrollers\gps-tracker\firmware\CMakeLists.txt|../../../CMakeLists.txt
-C:\Microcontrollers\gps-tracker\firmware\build\VisualGDB\Debug\toolchain.cmake|toolchain.cmake
+C:\Microcontrollers\gps-tracker\common\Core\Src\main.c|CMakeFiles/gps-tracker.dir/C_/Microcontrollers/gps-tracker/common/Core/Src/main.c.obj
