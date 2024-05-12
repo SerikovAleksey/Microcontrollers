@@ -1,0 +1,5 @@
+C:/Microcontrollers/oled-display/firmware/build/VisualGDB/Debug/CMakeFiles/BSP.dir
+C:/Microcontrollers/oled-display/firmware/build/VisualGDB/Debug/CMakeFiles/oled-display.dir
+C:/Microcontrollers/oled-display/firmware/build/VisualGDB/Debug/CMakeFiles/edit_cache.dir
+C:/Microcontrollers/oled-display/firmware/build/VisualGDB/Debug/CMakeFiles/oled-display-bin.dir
+C:/Microcontrollers/oled-display/firmware/build/VisualGDB/Debug/CMakeFiles/rebuild_cache.dir

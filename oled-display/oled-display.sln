@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34114.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "oled-display-fw", "firmware\oled-display-fw.vgdbcmake", "{A79E854A-A9F1-4BD6-872C-891F883E0297}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A79E854A-A9F1-4BD6-872C-891F883E0297}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{A79E854A-A9F1-4BD6-872C-891F883E0297}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{A79E854A-A9F1-4BD6-872C-891F883E0297}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{A79E854A-A9F1-4BD6-872C-891F883E0297}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{A79E854A-A9F1-4BD6-872C-891F883E0297}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{A79E854A-A9F1-4BD6-872C-891F883E0297}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{A79E854A-A9F1-4BD6-872C-891F883E0297}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{A79E854A-A9F1-4BD6-872C-891F883E0297}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0922C989-A79A-429E-91B1-96EFD73EFBCB}
+	EndGlobalSection
+EndGlobal
