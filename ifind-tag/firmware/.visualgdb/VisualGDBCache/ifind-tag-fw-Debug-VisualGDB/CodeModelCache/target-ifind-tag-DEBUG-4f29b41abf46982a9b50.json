@@ -1,0 +1,370 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "ifind-tag"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_bsp_based_executable",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"C:/Program Files (x86)/Sysprogs/VisualGDB/CMake/embedded/root.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 139,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 52,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g3 -O0"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-mcpu=cortex-m3"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "STM32F103x6"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "C:/Microcontrollers/ifind-tag/firmware/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Microcontrollers/ifind-tag/firmware/../common/Core/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Microcontrollers/ifind-tag/firmware/../common/Drivers/STM32F1xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Microcontrollers/ifind-tag/firmware/../common/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Microcontrollers/ifind-tag/firmware/../common/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Microcontrollers/ifind-tag/firmware/../common/Drivers/CMSIS/Include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Microcontrollers/ifind-tag/common/Core/Inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Microcontrollers/ifind-tag/common/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Microcontrollers/ifind-tag/common/Drivers/CMSIS/Include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "BSP::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ifind-tag::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g3 -O0",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,-Map=ifind-tag.map",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,--no-warn-rwx-segments",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-gc-sections",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-mcpu=cortex-m3",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C",
+		"traceableCommandFragments" : 
+		[
+			{
+				"backtrace" : 4,
+				"fragment" : "BSP"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,-Map=ifind-tag.map"
+			}
+		]
+	},
+	"name" : "ifind-tag",
+	"nameOnDisk" : "ifind-tag",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/main.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/stm32f1xx_hal_msp.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/stm32f1xx_it.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/syscalls.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/sysmem.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/system_stm32f1xx.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Startup/startup_stm32f103c6tx.s.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}
