@@ -57,6 +57,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define GNSS_EN_Pin GPIO_PIN_6
+#define GNSS_EN_GPIO_Port GPIOA
+#define SIM_PWK_Pin GPIO_PIN_7
+#define SIM_PWK_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 

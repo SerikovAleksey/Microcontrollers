@@ -14,13 +14,17 @@ find_bsp(ID com.sysprogs.project_importers.stm32.cubemx SOURCE_PROJECT ./../comm
 
 list(APPEND PROJECT_SOURCES
 
-        #"${PROJECT_SOURCE_DIR}/include/ssd1306.h"
-        #"${PROJECT_SOURCE_DIR}/src/ssd1306.c"
+        "${PROJECT_SOURCE_DIR}/include/sim868-driver.h"
+        "${PROJECT_SOURCE_DIR}/src/sim868-driver.c"
 
         "${PROJECT_SOURCE_DIR}/src/main.c"
 
-        #"${PROJECT_SOURCE_DIR}/include/ssd1306_interface.h"
-        #"${PROJECT_SOURCE_DIR}/src/ssd1306_interface.c"
+        "${PROJECT_SOURCE_DIR}/include/gnss.h"
+        "${PROJECT_SOURCE_DIR}/include/gprs.h"
+        "${PROJECT_SOURCE_DIR}/include/bluetooth.h"
+        "${PROJECT_SOURCE_DIR}/src/gnss.c"
+        "${PROJECT_SOURCE_DIR}/src/gprs.c"
+        "${PROJECT_SOURCE_DIR}/src/bluetooth.c"
 
         #"${HAL_HEADERS}"
         #"${HAL_SOURCES}"
