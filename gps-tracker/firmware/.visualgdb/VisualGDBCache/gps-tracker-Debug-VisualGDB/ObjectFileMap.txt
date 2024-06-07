@@ -1,0 +1,1 @@
+C:\Microcontrollers\gps-tracker\common\Core\Src\main.c|CMakeFiles/gps-tracker.dir/C_/Microcontrollers/gps-tracker/common/Core/Src/main.c.obj
