@@ -42,14 +42,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "BSP::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-BSP-DEBUG-c42fa1ccbdbe788a6670.json",
+					"jsonFile" : "target-BSP-DEBUG-901326e0dd5cca4dfe17.json",
 					"name" : "BSP",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ifind-tag::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ifind-tag-DEBUG-45105d3c5add1033ddd3.json",
+					"jsonFile" : "target-ifind-tag-DEBUG-37556268647af73064bf.json",
 					"name" : "ifind-tag",
 					"projectIndex" : 0
 				},

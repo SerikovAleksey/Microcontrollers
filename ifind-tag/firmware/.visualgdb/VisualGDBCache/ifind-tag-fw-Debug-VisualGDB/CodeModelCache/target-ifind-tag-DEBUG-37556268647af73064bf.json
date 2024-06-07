@@ -251,7 +251,10 @@
 				25,
 				26,
 				27,
-				28
+				28,
+				29,
+				30,
+				31
 			]
 		}
 	],
@@ -310,6 +313,12 @@
 		{
 			"backtrace" : 4,
 			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/gpio.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
 			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/main.c.obj",
 			"sourceGroupIndex" : 2
 		},
@@ -341,6 +350,12 @@
 			"backtrace" : 4,
 			"isGenerated" : true,
 			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/system_stm32f1xx.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/usart.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -425,6 +440,12 @@
 			"backtrace" : 4,
 			"isGenerated" : true,
 			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj",
 			"sourceGroupIndex" : 2
 		}
 	],
