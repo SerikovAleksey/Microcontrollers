@@ -1,3 +1,6 @@
-#include "main.h"
-#include "usart.h"
+#pragma once
 
+#include "gpio.h"
+#include "usart.h"
+#include "main.h"
+	

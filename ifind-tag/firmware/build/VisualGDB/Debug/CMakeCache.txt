@@ -18,7 +18,7 @@
 BSP_BSP_ALIAS:STRING=BSP
 
 //Default linker script for BSP. Used by the VisualGDB GUI.
-BSP_LINKER_SCRIPT:FILEPATH=
+BSP_LINKER_SCRIPT:FILEPATH=C:/Microcontrollers/ifind-tag/common/STM32F103C6TX_FLASH.ld
 
 BSP_ROOT:PATH=C:/Microcontrollers/ifind-tag/firmware
 
@@ -420,4 +420,5 @@ _BSP_ROOT:INTERNAL=C:/Microcontrollers/ifind-tag/firmware
 _BSP_VERSION:INTERNAL=
 ifind-tag_EXPLICIT_LINKER_SCRIPT:INTERNAL=
 ifind-tag_IS_DUMMY:INTERNAL=0
+ifind-tag_LINKER_SCRIPT:INTERNAL=C:/Microcontrollers/ifind-tag/common/STM32F103C6TX_FLASH.ld
 

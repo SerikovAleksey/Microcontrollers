@@ -2,19 +2,14 @@
 <MemoryUtilizationReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Memories>
     <MemoryUtilization>
-      <MemoryName>FLASH</MemoryName>
-      <Used>6290</Used>
-      <Total>10388</Total>
-    </MemoryUtilization>
-    <MemoryUtilization>
       <MemoryName>RAM</MemoryName>
-      <Used>900</Used>
-      <Total>11288</Total>
+      <Used>3216</Used>
+      <Total>10240</Total>
     </MemoryUtilization>
     <MemoryUtilization>
-      <MemoryName>Unknown</MemoryName>
-      <Used>0</Used>
-      <Total>0</Total>
+      <MemoryName>FLASH</MemoryName>
+      <Used>9688</Used>
+      <Total>32768</Total>
     </MemoryUtilization>
   </Memories>
 </MemoryUtilizationReport>

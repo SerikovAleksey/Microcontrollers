@@ -62,7 +62,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\USER\AppData\Local\VisualGDB\CMake\bin\cmake.exe --regenerate-during-build -SC:\Microcontrollers\led-lamp\firmware -BC:\Microcontrollers\led-lamp\firmware\build\VisualGDB\Debug
+  command = C:\Users\Admin\AppData\Local\VisualGDB\CMake\bin\cmake.exe --regenerate-during-build -SC:\Microcontrollers\led-lamp\firmware -BC:\Microcontrollers\led-lamp\firmware\build\VisualGDB\Debug
   description = Re-running CMake...
   generator = 1
 
