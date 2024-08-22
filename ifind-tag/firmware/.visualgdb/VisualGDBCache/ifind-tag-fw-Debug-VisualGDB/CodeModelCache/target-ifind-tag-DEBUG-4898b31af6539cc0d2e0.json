@@ -276,7 +276,8 @@
 				28,
 				29,
 				30,
-				31
+				31,
+				32
 			]
 		}
 	],
@@ -372,6 +373,12 @@
 			"backtrace" : 6,
 			"isGenerated" : true,
 			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/system_stm32f1xx.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/tim.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
