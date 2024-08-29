@@ -731,7 +731,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/oled-display"
+			"value" : "C:/Program Files (x86)/ifind-tag"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -947,7 +947,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "oled-display"
+			"value" : "ifind-tag"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1299,7 +1299,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Microcontrollers/ifind-tag/common/oled-display.ioc"
+			"value" : "C:/Microcontrollers/ifind-tag/common/ifind-tag.ioc"
 		},
 		{
 			"name" : "_BSP_CONFIGURATOR_ID",
@@ -1398,6 +1398,18 @@
 			"value" : ""
 		},
 		{
+			"name" : "ifind-tag_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug"
+		},
+		{
 			"name" : "ifind-tag_BSP_ALIAS",
 			"properties" : 
 			[
@@ -1446,19 +1458,7 @@
 			"value" : "C:/Microcontrollers/ifind-tag/common/STM32F103C6TX_FLASH.ld"
 		},
 		{
-			"name" : "oled-display_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug"
-		},
-		{
-			"name" : "oled-display_SOURCE_DIR",
+			"name" : "ifind-tag_SOURCE_DIR",
 			"properties" : 
 			[
 				{

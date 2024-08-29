@@ -11,5 +11,16 @@
 #define SMS_COMMAND_LEN			 20
 #define SMS_COMMAND_RESULT_LEN   10
 
-void sim868_handler();
-void sim868_init();
+typedef struct
+{
+	UART_HandleTypeDef sim_uart;
+	UART_HandleTypeDef gnss_uart;
+	TIM_HandleTypeDef tim;
+	uint16_t sim_pwk_pin;
+	GPIO_TypeDef * sim_pwk_port;
+	uint16_t gnss_pwk_pin;
+	GPIO_TypeDef * gnss_pwk_port;
+} sim868_ctx;
+
+void sim868_handler(sim868_ctx ctx);
+void sim868_init(sim868_ctx ctx);

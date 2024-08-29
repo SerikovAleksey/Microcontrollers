@@ -7,11 +7,12 @@
 #include <stdbool.h> 
 #include "sim868-driver.h" 
 
+#include <stdio.h>
+
 void SystemClock_Config(void);
 extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart2;
 extern TIM_HandleTypeDef htim1;
-
 
 int main()
 {
@@ -22,12 +23,12 @@ int main()
 	MX_USART2_UART_Init();
 	MX_TIM1_Init();
 	
-	__HAL_TIM_CLEAR_FLAG(&htim1, TIM_SR_UIF); // очищаем флаг
-	HAL_TIM_Base_Start_IT(&htim1);
-	sim868_init();
+	sim868_ctx ctx = { huart1, huart2, htim1, SIM_PWK_Pin, SIM_PWK_GPIO_Port, GNSS_EN_Pin, GNSS_EN_GPIO_Port };
+	
+	sim868_init(ctx);
 	
 	while (1)
 	{
-		sim868_handler();
+		sim868_handler(ctx);
 	}
 }

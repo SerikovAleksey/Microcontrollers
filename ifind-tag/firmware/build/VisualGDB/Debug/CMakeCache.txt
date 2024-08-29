@@ -123,7 +123,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/oled-display
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/ifind-tag
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/sysgcc/arm-eabi/bin/arm-none-eabi-ld.exe
@@ -167,7 +167,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=oled-display
+CMAKE_PROJECT_NAME:STATIC=ifind-tag
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/sysgcc/arm-eabi/bin/arm-none-eabi-ranlib.exe
@@ -247,14 +247,14 @@ PLATFORM:UNINITIALIZED=VisualGDB
 //No help, variable specified on the command line.
 TOOLCHAIN_ROOT:UNINITIALIZED=C:/SysGCC/arm-eabi
 
+//Value Computed by CMake
+ifind-tag_BINARY_DIR:STATIC=C:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug
+
 //Specifies the BSP alias for the  target.
 ifind-tag_BSP_ALIAS:STRING=BSP
 
 //Value Computed by CMake
-oled-display_BINARY_DIR:STATIC=C:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug
-
-//Value Computed by CMake
-oled-display_SOURCE_DIR:STATIC=C:/Microcontrollers/ifind-tag/firmware
+ifind-tag_SOURCE_DIR:STATIC=C:/Microcontrollers/ifind-tag/firmware
 
 
 ########################
@@ -409,7 +409,7 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 DUMMY_SOURCE_FILE:INTERNAL=C:/Program Files (x86)/Sysprogs/VisualGDB/CMake/embedded/dummy.c
-_BSP_CONFIGURABLE_PROJECT:INTERNAL=C:/Microcontrollers/ifind-tag/common/oled-display.ioc
+_BSP_CONFIGURABLE_PROJECT:INTERNAL=C:/Microcontrollers/ifind-tag/common/ifind-tag.ioc
 _BSP_CONFIGURATOR_ID:INTERNAL=com.sysprogs.project_importers.stm32.cubemx
 _BSP_EXPLICIT_LOCATION:INTERNAL=
 _BSP_GENERATED_PROJECT_PROFILE:INTERNAL=C:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug/BSP.cmake

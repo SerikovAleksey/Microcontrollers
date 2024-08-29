@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(oled-display LANGUAGES C CXX ASM)
+project(ifind-tag LANGUAGES C CXX ASM)
 
 
 #find_bsp(C_STANDARD 99 DISABLE_GNU_EXTENSIONS SOURCE bsp)
-find_bsp(ID com.sysprogs.project_importers.stm32.cubemx SOURCE_PROJECT ./../common/oled-display.ioc)
+find_bsp(ID com.sysprogs.project_importers.stm32.cubemx SOURCE_PROJECT ./../common/ifind-tag.ioc)
 
 #
 #file(GLOB HAL_SOURCES  "${PROJECT_SOURCE_DIR}/../common/Drivers/STM32F1xx_HAL_Driver/Src/*.c")

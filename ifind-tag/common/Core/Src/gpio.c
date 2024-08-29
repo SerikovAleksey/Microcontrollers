@@ -49,7 +49,7 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GNSS_EN_Pin|SIM_PWK_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, GNSS_EN_Pin|SIM_PWK_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pins : PAPin PAPin */
   GPIO_InitStruct.Pin = GNSS_EN_Pin|SIM_PWK_Pin;

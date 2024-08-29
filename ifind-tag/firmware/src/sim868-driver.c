@@ -1,4 +1,5 @@
 #include "sim868-driver.h"
+#include "gprs.h"
 
 typedef struct {
 	char buffer[256];
@@ -8,13 +9,13 @@ typedef struct {
 } reader_t;
 
 typedef struct {
-	char syncword[4];
+//	char syncword[4];
 	char buffer[256];
 	int data_ptr;
 	bool synced;
 	bool ready;
 	bool recieved_sms;
-	uint8_t amount_crlf;
+//	uint8_t amount_crlf;
 } sim_reader_t;
 
 typedef struct
@@ -37,39 +38,12 @@ static uint8_t sim_active_reader_index = 0;
 
 static bool send1 = false;
 static bool send2 = false;
+static bool send3 = false;
+static bool sms_init = false;
 
 static int64_t t = 0;
 
 static uint8_t sms_initialize = 0;
-static  bool time_up = false;
-typedef struct
-{
-	uint16_t name_len;
-	uint16_t full_len;
-	char name[30];
-	bool applied;
-	char result[];
-}current_command_t;
-
-static current_command_t current_command;
-
-const char *cmds[] = {
-	"AT\r\n",
-	"AT+CMEE=0\r\n",
-	"AT+GMR\r\n",//get version of FW
-	"AT+GSN\r\n",//get IMEI
-	"AT+CNMI=1,2,0,1,0\r\n",
-	"AT+SCLASS0=0\r\n",
-	"AT+CMGF=1\r\n",
-	"AT+CGNSPWR=1\r\n",// power for GPS/GLONASS ON
-	"AT+CGNSPWR?\r\n",//check power for GPS/GLONASS status
-	"AT+CREG?\r\n",
-	"AT+CSQ\r\n",//get RSSI
-	"AT+CNETSCAN\r\n",
-	"AT+CNMI=2,2,0,0,0\r\n",
-	"AT+COPS?\r\n",
-	"AT+CSDT=0\r\n"
-};
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
@@ -101,70 +75,75 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 		}
 		HAL_UART_Receive_IT(&huart2, &gnss_byte, 1);
 	}
-//	if (huart->Instance == USART1)
-//	{
-//		if (!sim_active_reader->synced)
-//		{
-//			sim_active_reader->syncword[0] = sim_active_reader->syncword[1]; 
-//			sim_active_reader->syncword[1] = sim_active_reader->syncword[2]; 
-//			sim_active_reader->syncword[2] = sim_active_reader->syncword[3]; 
-//			sim_active_reader->syncword[3] = sim_byte; 
-//			
-//			if (!strcmp((char*)"+CMT", (char*)sim_active_reader->syncword))
-//			{
-//				memcpy(sim_active_reader->buffer, sim_active_reader->syncword, SMS_HEADER_LEN);
-//				sim_active_reader->synced = true;
-//				sim_active_reader->data_ptr = 4;
-//				sim_active_reader->recieved_sms = true;
-//			}
-////			if (!strcmp((char*)"AT+C", (char*)sim_active_reader->syncword))
-////			{
-////				memcpy(sim_active_reader->buffer, sim_active_reader->syncword, SMS_HEADER_LEN);
-////				sim_active_reader->synced = true;
-////				sim_active_reader->data_ptr = 4;
-////				sim_active_reader->recieved_sms = false;
-////			}
-//		}
-//		else
-//		{
-//			sim_active_reader->buffer[sim_active_reader->data_ptr] = sim_byte;
-//			sim_active_reader->data_ptr++;
-//			
-//			if (sim_byte == '\n') sim_active_reader->amount_crlf++;
-//			
-//			if (sim_active_reader->amount_crlf == 2 && sim_byte == '\n' && sim_active_reader->recieved_sms == false)
-//			{
-//				current_command.full_len = sim_active_reader->data_ptr;
-//				sim_active_reader->ready = true;
-//				
-//				sim_active_reader_index = !sim_active_reader_index;
-//				sim_active_reader = &sim_readers[sim_active_reader_index];
-//            
-//				sim_active_reader->data_ptr = 0;
-//				sim_active_reader->synced = false;
-//				sim_active_reader->ready = false;
-//			}
-//			
-//			if (sim_active_reader->data_ptr > SMS_HEADER_LEN + current_command.name_len && sim_byte == '\n' && sim_active_reader->recieved_sms == true)
-//			{
-//				sim_active_reader->ready = true;
-//				
-//				sim_active_reader_index = !sim_active_reader_index;
-//				sim_active_reader = &sim_readers[sim_active_reader_index];
-//            
-//				sim_active_reader->data_ptr = 0;
-//				sim_active_reader->synced = false;
-//				sim_active_reader->ready = false;
-//			}
-//		}
-//		HAL_UART_Receive_IT(&huart1, &sim_byte, 1);
-//	}
+	//	if (huart->Instance == USART1)
+	//	{
+	//		if (!sim_active_reader->synced)
+	//		{
+	//			sim_active_reader->syncword[0] = sim_active_reader->syncword[1]; 
+	//			sim_active_reader->syncword[1] = sim_active_reader->syncword[2]; 
+	//			sim_active_reader->syncword[2] = sim_active_reader->syncword[3]; 
+	//			sim_active_reader->syncword[3] = sim_byte; 
+	//			
+	//			if (!strcmp((char*)"\r\n+C", (char*)sim_active_reader->syncword))
+	//			{
+	//				memcpy(sim_active_reader->buffer, sim_active_reader->syncword, SMS_HEADER_LEN);
+	//				sim_active_reader->synced = true;
+	//				sim_active_reader->data_ptr = 4;
+	//				sim_active_reader->recieved_sms = true;
+	//			}
+	////			if (!strcmp((char*)"AT+C", (char*)sim_active_reader->syncword))
+	////			{
+	////				memcpy(sim_active_reader->buffer, sim_active_reader->syncword, SMS_HEADER_LEN);
+	////				sim_active_reader->synced = true;
+	////				sim_active_reader->data_ptr = 4;
+	////				sim_active_reader->recieved_sms = false;
+	////			}
+	//		}
+	//		else
+	//		{
+	//			sim_active_reader->buffer[sim_active_reader->data_ptr] = sim_byte;
+	//			sim_active_reader->data_ptr++;
+	//			
+	//			if (sim_byte == '\n') sim_active_reader->amount_crlf++;
+	//			
+	////			if (sim_active_reader->amount_crlf == 2 && sim_byte == '\n' && sim_active_reader->recieved_sms == false)
+	////			{
+	////				current_command.full_len = sim_active_reader->data_ptr;
+	////				sim_active_reader->ready = true;
+	////				
+	////				sim_active_reader_index = !sim_active_reader_index;
+	////				sim_active_reader = &sim_readers[sim_active_reader_index];
+	////            
+	////				sim_active_reader->data_ptr = 0;
+	////				sim_active_reader->synced = false;
+	////				sim_active_reader->ready = false;
+	////			}
+	//			
+	//			if (sim_active_reader->amount_crlf == 2 && sim_byte == '\n' && sim_active_reader->recieved_sms == true)
+	//			{
+	//				sim_active_reader->ready = true;
+	//				
+	//				sim_active_reader_index = !sim_active_reader_index;
+	//				sim_active_reader = &sim_readers[sim_active_reader_index];
+	//            
+	//				sim_active_reader->data_ptr = 0;
+	//				sim_active_reader->synced = false;
+	//				sim_active_reader->ready = false;
+	//			}
+	//		}
+	//		HAL_UART_Receive_IT(&huart1, &sim_byte, 1);
+	//	}
 }
 
 void HAL_UART_IDLE_Callback(UART_HandleTypeDef *huart)
 {
 	if (huart == &huart1)
 	{
+		char syncword[6];
+		memcpy(syncword, sim_active_reader->buffer, 6);
+		
+		if (!strcmp(syncword, (char*)"\r\n+CMT")) sim_active_reader->recieved_sms = true; 
+		
 		__HAL_UART_DISABLE_IT(&huart1, UART_IT_IDLE);
 		
 		sim_active_reader->ready = true;
@@ -172,7 +151,6 @@ void HAL_UART_IDLE_Callback(UART_HandleTypeDef *huart)
 		sim_active_reader_index = !sim_active_reader_index;
 		sim_active_reader = &sim_readers[sim_active_reader_index];
 		            
-		sim_active_reader->data_ptr = 0;
 		sim_active_reader->synced = false;
 		sim_active_reader->ready = false;
 		
@@ -197,102 +175,120 @@ int current_command_status(char* current_status, uint16_t size)
 	memcpy(status, current_status, size);
 	if (!strcmp((char*)"OK", (char*)status)) return 0;
 	if (!strcmp((char*)"EROR", (char*)status)) return 1;
-	return 2;
+	if (!strcmp((char*)"WAIT", (char*)status)) return 2;
+	return 3;
 }
-
-static int reader_parse(sim_reader_t* reader)
+int command_parse(const char* answer)
 {
 	current_command.full_len = 0;
 	for (uint16_t i = 0; i < 256; i++)
 	{
-		if (reader->buffer[i] == 0 && i > current_command.name_len) break;
+		if (answer[i] == 0 && i > current_command.name_len) break;
 		
 		current_command.full_len++;
 	}
 	
 	if (current_command.full_len < (current_command.name_len + 1 + 2)) return 2; // + 1 т.к. появляется лишний символ \r, + 2 т.к. идет перевод строки в конце\r\n
 	
-	uint16_t result_len = current_command.full_len - (current_command.name_len + 1 + 2);
+//	uint16_t result_len = current_command.full_len - (current_command.name_len + 1 + 2);
+	uint16_t result_len = 2;
 	
 	char result[result_len];
-	memcpy(result, &reader->buffer[current_command.full_len - result_len - 2], result_len);
+//	memcpy(result, &answer[current_command.full_len - result_len - 2], result_len);
+	memcpy(result, &answer[current_command.name_len + 1], result_len);
 	memcpy(current_command.result, result, result_len);
 	
 	if (current_command_status(result, result_len)) return 1;
 	
 	current_command.applied = true;
 	
-	if (!strcmp(current_command.name, (char*)"AT+CMGF=1\r\n")) send2 = true;
+//	if (!strcmp(current_command.name, (char*)"AT+CMGF=1\r\n")) 
+	if (!strcmp(current_command.name, (char*)"AT+CSCS=\"GSM\"\r\n")) 
+	{
+		send2 = true;
+		command_deinit(&current_command);
+	}
 	
-	if (!strcmp(current_command.name, (char*)"AT+CNMI=2,2,0,0,0\r\n")) send1 = true;
+	if (!strcmp(current_command.name, (char*)"AT+CNMI=1,2,0,1,0\r\n")) 
+	{
+		send1 = true;
+		command_deinit(&current_command);
+	}
+	if (!strcmp(current_command.name, (char*)"AT+CMGF=1\r\n")) 
+	{
+		send3 = true;
+		command_deinit(&current_command);
+	}
 	return 0;
 }
-void send_command(UART_HandleTypeDef *huart, const char* data, uint16_t size)
+static int reader_parse(sim_reader_t* reader)
 {
-	current_command.name_len = size;
-	current_command.name[0] = '\0';
-	strcpy(current_command.name, data);
-	strcpy(current_command.result, (char*)"EROR");
-	current_command.full_len = 0;
-	current_command.applied = false;
+	if (!reader->recieved_sms)
+	{
+		command_parse(reader->buffer);
+		return 1;
+	}
 	
-	HAL_UART_Transmit_IT(huart, (uint8_t*)data, size);
-	HAL_Delay(300);
+	sms_parse(reader->buffer);
+	reader->recieved_sms = false;
+	return 0;
 }
 
-//int command_handler(UART_HandleTypeDef *huart, const uint8_t* command, uint16_t command_len)
-//{
-//	send_command(huart, command, command_len);
-//	
-//	return answer_parse(&sim_readers[!sim_active_reader_index]);
-//}
+
 
 void sms_start_receive()
 {
-//	t++;
 	if (!send1 && time_up) 
 	{
-		send_command(&huart1, cmds[12], 19);
+		send_command(&huart1, cmds[4], 19);
 		time_up = false;
-//		t = 0;
 	}
 	if (!send2 && time_up) 
 	{
-		send_command(&huart1, (uint8_t*)cmds[6], 11);
-//		t = 250001;
+		send_command(&huart1, cmds[15], 17);
 		time_up = false;
-	}     
+	}
+	if (!send3 && time_up) 
+	{
+		send_command(&huart1, cmds[6], 11);
+		time_up = false;
+	}
+	if (send1 && send2 && send3) sms_init = true;
 }
 
-void sim868_init()
+void sim868_init(sim868_ctx ctx)
 {
 	gnss_active_reader = &gnss_readers[gnss_active_reader_index];
 	sim_active_reader = &sim_readers[sim_active_reader_index];
 	
-	HAL_GPIO_WritePin(SIM_PWK_GPIO_Port, SIM_PWK_Pin, GPIO_PIN_RESET); // включение сотовой связи
-	HAL_GPIO_WritePin(GNSS_EN_GPIO_Port, GNSS_EN_Pin, GPIO_PIN_RESET); // включение gps
+	HAL_GPIO_WritePin(ctx.sim_pwk_port, ctx.sim_pwk_pin, GPIO_PIN_RESET); // включение сотовой связи
+	HAL_GPIO_WritePin(ctx.gnss_pwk_port, ctx.gnss_pwk_pin, GPIO_PIN_RESET); // включение gps
 	HAL_Delay(2000);
-	HAL_GPIO_WritePin(SIM_PWK_GPIO_Port, SIM_PWK_Pin, GPIO_PIN_SET);
-	HAL_GPIO_WritePin(GNSS_EN_GPIO_Port, GNSS_EN_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(ctx.sim_pwk_port, ctx.sim_pwk_pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(ctx.gnss_pwk_port, ctx.gnss_pwk_pin, GPIO_PIN_SET);
 	
-	__HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE);
-	HAL_UART_Receive_IT(&huart1, (uint8_t*)sim_active_reader->buffer, 256);
-	HAL_UART_Receive_IT(&huart2, &gnss_byte, 1);
+	__HAL_UART_ENABLE_IT(&ctx.sim_uart, UART_IT_IDLE);
+	HAL_UART_Receive_IT(&ctx.sim_uart, (uint8_t*)sim_active_reader->buffer, 256);
+	HAL_UART_Receive_IT(&ctx.gnss_uart, &gnss_byte, 1);
+	
+	__HAL_TIM_CLEAR_FLAG(&ctx.tim, TIM_SR_UIF); // очищаем флаг
+	HAL_TIM_Base_Start_IT(&ctx.tim);
 	
 }
 
-
-
-void sim868_handler()
+void sim868_handler(sim868_ctx ctx)
 {
 	reader_t* inactive_gnss_reader = &gnss_readers[!gnss_active_reader_index];
 	
 	sim_reader_t* inactive_sim_reader = &sim_readers[!sim_active_reader_index];
 	
+	if (!sms_init) sms_start_receive();
+	
+	sms_handler();
+	
 	if (inactive_gnss_reader->ready) {
 		inactive_gnss_reader->ready = false;
 	}
-	sms_start_receive();
 	
 	if (inactive_sim_reader->ready) {
 		reader_parse(inactive_sim_reader);
