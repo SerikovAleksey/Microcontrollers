@@ -13,7 +13,9 @@ c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(li
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcat.o)
                               CMakeFiles/ifind-tag.dir/src/gprs.c.obj (strcat)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
-                              CMakeFiles/ifind-tag.dir/src/gprs.c.obj (strncpy)
+                              CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj (strncpy)
+c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o)
+                              CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj (strstr)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-closer.o)
                               c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-stdio.o) (_close_r)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-reent.o)
@@ -37,9 +39,9 @@ c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(li
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcpy.o)
                               CMakeFiles/ifind-tag.dir/src/gprs.c.obj (strcpy)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcpy.o)
-                              CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj (memcpy)
+                              CMakeFiles/ifind-tag.dir/src/main.c.obj (memcpy)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
-                              CMakeFiles/ifind-tag.dir/src/gprs.c.obj (strlen)
+                              CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj (strlen)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
                               c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-exit.o) (__call_exitprocs)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
@@ -54,6 +56,12 @@ c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(li
                               c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-findfp.o) (_fclose_r)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fflush.o)
                               c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fclose.o) (__sflush_r)
+c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcmp.o)
+                              c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o) (memcmp)
+c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strchr.o)
+                              c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o) (strchr)
+c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strnlen.o)
+                              c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o) (strnlen)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-sbrkr.o)
                               c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-freer.o) (_sbrk_r)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
@@ -2935,11 +2943,6 @@ Discarded input sections
  .data.cmds     0x00000000       0x40 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
  .bss.actions   0x00000000        0x0 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
  .bss.sms_sent  0x00000000        0x1 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
- .bss.send_tel  0x00000000        0x1 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
- .text.send_sms
-                0x00000000       0x9c CMakeFiles/ifind-tag.dir/src/gprs.c.obj
- .text.analyze_sms_data
-                0x00000000       0x16 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
  .debug_macro   0x00000000      0xaa2 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
  .debug_macro   0x00000000      0x21b CMakeFiles/ifind-tag.dir/src/gprs.c.obj
  .debug_macro   0x00000000       0x2e CMakeFiles/ifind-tag.dir/src/gprs.c.obj
@@ -3076,13 +3079,14 @@ Discarded input sections
  .text          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcat.o)
  .data          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcat.o)
  .bss           0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcat.o)
- .text.strcat   0x00000000       0x40 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcat.o)
- .debug_frame   0x00000000       0x28 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcat.o)
- .ARM.attributes
-                0x00000000       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcat.o)
  .text          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
  .data          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
  .bss           0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
+ .text          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o)
+ .data          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o)
+ .bss           0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o)
+ .text.two_way_short_needle
+                0x00000000      0x18c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o)
  .text          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-closer.o)
  .data          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-closer.o)
  .bss           0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-closer.o)
@@ -3188,10 +3192,6 @@ Discarded input sections
  .text          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
  .data          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
  .bss           0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
- .text.strlen   0x00000000       0x5c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
- .debug_frame   0x00000000       0x20 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
- .ARM.attributes
-                0x00000000       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
  .text          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
  .data          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
  .bss           0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
@@ -3261,6 +3261,15 @@ Discarded input sections
  .debug_frame   0x00000000       0x70 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fflush.o)
  .ARM.attributes
                 0x00000000       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fflush.o)
+ .text          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcmp.o)
+ .data          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcmp.o)
+ .bss           0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcmp.o)
+ .text          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strchr.o)
+ .data          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strchr.o)
+ .bss           0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strchr.o)
+ .text          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strnlen.o)
+ .data          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strnlen.o)
+ .bss           0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strnlen.o)
  .text          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-sbrkr.o)
  .data          0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-sbrkr.o)
  .bss           0x00000000        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-sbrkr.o)
@@ -3350,7 +3359,7 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn
                 0x08000000                g_pfnVectors
                 0x0800010c                        . = ALIGN (0x4)
 
-.text           0x0800010c     0x3960
+.text           0x0800010c     0x3fc0
                 0x0800010c                        . = ALIGN (0x4)
  *(.text)
  .text          0x0800010c      0x1bc c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcmp.o)
@@ -3647,160 +3656,181 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn
  .text.HAL_TIM_PeriodElapsedCallback
                 0x08002ff0       0x2c CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
                 0x08002ff0                HAL_TIM_PeriodElapsedCallback
- .text.current_command_status
-                0x0800301c       0xbc CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
-                0x0800301c                current_command_status
+ .text.set_command_status
+                0x0800301c       0x78 CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+                0x0800301c                set_command_status
  .text.command_parse
-                0x080030d8      0x16c CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
-                0x080030d8                command_parse
+                0x08003094       0xdc CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+                0x08003094                command_parse
  .text.reader_parse
-                0x08003244       0x3e CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
- *fill*         0x08003282        0x2 
+                0x08003170       0x3e CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+ *fill*         0x080031ae        0x2 
  .text.sms_start_receive
-                0x08003284       0xc0 CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
-                0x08003284                sms_start_receive
- .text.sim868_init
-                0x08003344       0xec CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
-                0x08003344                sim868_init
+                0x080031b0       0x94 CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+                0x080031b0                sms_start_receive
+ .text.sim868_power_on
+                0x08003244       0xcc CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+                0x08003244                sim868_power_on
  .text.sim868_handler
-                0x08003430       0xb0 CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
-                0x08003430                sim868_handler
- .text.main     0x080034e0       0xa4 CMakeFiles/ifind-tag.dir/src/main.c.obj
-                0x080034e0                main
+                0x08003310       0xb0 CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+                0x08003310                sim868_handler
+ .text.main     0x080033c0       0xa4 CMakeFiles/ifind-tag.dir/src/main.c.obj
+                0x080033c0                main
  .text.command_init
-                0x08003584       0x50 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
-                0x08003584                command_init
+                0x08003464       0x4c CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+                0x08003464                command_init
  .text.command_deinit
-                0x080035d4       0x40 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
-                0x080035d4                command_deinit
+                0x080034b0       0x48 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+                0x080034b0                command_deinit
  .text.send_command
-                0x08003614       0x3c CMakeFiles/ifind-tag.dir/src/gprs.c.obj
-                0x08003614                send_command
+                0x080034f8       0xdc CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+                0x080034f8                send_command
+ .text.send_sms
+                0x080035d4       0x68 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+                0x080035d4                send_sms
  .text.sms_parse
-                0x08003650       0xf4 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
-                0x08003650                sms_parse
+                0x0800363c       0xf4 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+                0x0800363c                sms_parse
+ .text.analyze_sms_data
+                0x08003730       0x4c CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+                0x08003730                analyze_sms_data
  .text.sms_handler
-                0x08003744       0x28 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
-                0x08003744                sms_handler
- .text.memset   0x0800376c       0xa0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
-                0x0800376c                memset
- .text.strncpy  0x0800380c       0x6c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
-                0x0800380c                strncpy
+                0x0800377c       0x28 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+                0x0800377c                sms_handler
+ .text.memset   0x080037a4       0xa0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
+                0x080037a4                memset
+ .text.strcat   0x08003844       0x40 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcat.o)
+                0x08003844                strcat
+ .text.strncpy  0x08003884       0x6c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
+                0x08003884                strncpy
+ .text.critical_factorization
+                0x080038f0       0xc8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o)
+ .text.two_way_long_needle
+                0x080039b8      0x204 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o)
+ .text.strstr   0x08003bbc      0x16c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o)
+                0x08003bbc                strstr
  .text.__libc_init_array
-                0x08003878       0x50 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
-                0x08003878                __libc_init_array
+                0x08003d28       0x50 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
+                0x08003d28                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x080038c8        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
-                0x080038c8                __retarget_lock_acquire_recursive
+                0x08003d78        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+                0x08003d78                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x080038cc        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
-                0x080038cc                __retarget_lock_release_recursive
- .text.strcpy   0x080038d0       0xbc c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcpy.o)
-                0x080038d0                strcpy
+                0x08003d7c        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+                0x08003d7c                __retarget_lock_release_recursive
+ .text.strcpy   0x08003d80       0xbc c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcpy.o)
+                0x08003d80                strcpy
+ .text.strlen   0x08003e3c       0x5c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
+                0x08003e3c                strlen
  .text.startup.register_fini
-                0x0800398c       0x14 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
- .text.atexit   0x080039a0        0xc c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
-                0x080039a0                atexit
+                0x08003e98       0x14 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+ .text.atexit   0x08003eac        0xc c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
+                0x08003eac                atexit
+ .text.memcmp   0x08003eb8       0x60 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcmp.o)
+                0x08003eb8                memcmp
+ .text.strchr   0x08003f18       0xd0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strchr.o)
+                0x08003f18                strchr
+ .text.strnlen  0x08003fe8       0x24 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strnlen.o)
+                0x08003fe8                strnlen
  .text.__libc_fini_array
-                0x080039ac       0x28 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
-                0x080039ac                __libc_fini_array
+                0x0800400c       0x28 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
+                0x0800400c                __libc_fini_array
  .text.__register_exitproc
-                0x080039d4       0x80 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
-                0x080039d4                __register_exitproc
+                0x08004034       0x80 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
+                0x08004034                __register_exitproc
  *(.glue_7)
- .glue_7        0x08003a54        0x0 linker stubs
+ .glue_7        0x080040b4        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08003a54        0x0 linker stubs
+ .glue_7t       0x080040b4        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08003a54        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x080040b4        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x08003a54        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
-                0x08003a54                _init
- .init          0x08003a58        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x080040b4        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
+                0x080040b4                _init
+ .init          0x080040b8        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x08003a60        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
-                0x08003a60                _fini
- .fini          0x08003a64        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
-                0x08003a6c                        . = ALIGN (0x4)
-                0x08003a6c                        _etext = .
+ .fini          0x080040c0        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
+                0x080040c0                _fini
+ .fini          0x080040c4        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+                0x080040cc                        . = ALIGN (0x4)
+                0x080040cc                        _etext = .
 
-.vfp11_veneer   0x08003a6c        0x0
- .vfp11_veneer  0x08003a6c        0x0 linker stubs
+.vfp11_veneer   0x080040cc        0x0
+ .vfp11_veneer  0x080040cc        0x0 linker stubs
 
-.v4_bx          0x08003a6c        0x0
- .v4_bx         0x08003a6c        0x0 linker stubs
+.v4_bx          0x080040cc        0x0
+ .v4_bx         0x080040cc        0x0 linker stubs
 
-.iplt           0x08003a6c        0x0
- .iplt          0x08003a6c        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x080040cc        0x0
+ .iplt          0x080040cc        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x08003a6c      0x230
-                0x08003a6c                        . = ALIGN (0x4)
+.rodata         0x080040cc      0x200
+                0x080040cc                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08003a6c       0xf9 CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
- *fill*         0x08003b65        0x3 
- .rodata        0x08003b68      0x106 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+ .rodata        0x080040cc       0xe1 CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+ *fill*         0x080041ad        0x3 
+ .rodata        0x080041b0       0xf0 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
  *(.rodata*)
- *fill*         0x08003c6e        0x2 
  .rodata.AHBPrescTable
-                0x08003c70       0x10 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/system_stm32f1xx.c.obj
-                0x08003c70                AHBPrescTable
+                0x080042a0       0x10 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/system_stm32f1xx.c.obj
+                0x080042a0                AHBPrescTable
  .rodata.APBPrescTable
-                0x08003c80        0x8 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/system_stm32f1xx.c.obj
-                0x08003c80                APBPrescTable
+                0x080042b0        0x8 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/system_stm32f1xx.c.obj
+                0x080042b0                APBPrescTable
  .rodata.aPLLMULFactorTable.1
-                0x08003c88       0x10 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080042b8       0x10 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .rodata.aPredivFactorTable.0
-                0x08003c98        0x2 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08003c9c                        . = ALIGN (0x4)
- *fill*         0x08003c9a        0x2 
+                0x080042c8        0x2 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080042cc                        . = ALIGN (0x4)
+ *fill*         0x080042ca        0x2 
 
-.ARM.extab      0x08003c9c        0x0
-                0x08003c9c                        . = ALIGN (0x4)
+.ARM.extab      0x080042cc        0x0
+                0x080042cc                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08003c9c                        . = ALIGN (0x4)
+                0x080042cc                        . = ALIGN (0x4)
 
-.ARM            0x08003c9c        0x8
-                0x08003c9c                        . = ALIGN (0x4)
-                0x08003c9c                        __exidx_start = .
+.ARM            0x080042cc        0x8
+                0x080042cc                        . = ALIGN (0x4)
+                0x080042cc                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08003c9c        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcmp.o)
- .ARM.exidx     0x08003ca4        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcpy.o)
+ .ARM.exidx     0x080042cc        0x8 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcmp.o)
+ .ARM.exidx     0x080042d4        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcpy.o)
                                   0x8 (size before relaxing)
-                0x08003ca4                        __exidx_end = .
-                0x08003ca4                        . = ALIGN (0x4)
+                0x080042d4                        __exidx_end = .
+                0x080042d4                        . = ALIGN (0x4)
 
-.rel.dyn        0x08003ca4        0x0
- .rel.iplt      0x08003ca4        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x080042d4        0x0
+ .rel.iplt      0x080042d4        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.preinit_array  0x08003ca4        0x0
-                0x08003ca4                        . = ALIGN (0x4)
-                0x08003ca4                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080042d4        0x0
+                0x080042d4                        . = ALIGN (0x4)
+                0x080042d4                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08003ca4                        PROVIDE (__preinit_array_end = .)
-                0x08003ca4                        . = ALIGN (0x4)
+                0x080042d4                        PROVIDE (__preinit_array_end = .)
+                0x080042d4                        . = ALIGN (0x4)
 
-.init_array     0x08003ca4        0x8
-                0x08003ca4                        . = ALIGN (0x4)
-                0x08003ca4                        PROVIDE (__init_array_start = .)
+.init_array     0x080042d4        0x8
+                0x080042d4                        . = ALIGN (0x4)
+                0x080042d4                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x08003ca4        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+                0x080042d4        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x08003ca8        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x08003cac                        PROVIDE (__init_array_end = .)
-                0x08003cac                        . = ALIGN (0x4)
+ .init_array    0x080042d8        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x080042dc                        PROVIDE (__init_array_end = .)
+                0x080042dc                        . = ALIGN (0x4)
 
-.fini_array     0x08003cac        0x4
-                0x08003cac                        . = ALIGN (0x4)
-                0x08003cac                        PROVIDE (__fini_array_start = .)
+.fini_array     0x080042dc        0x4
+                0x080042dc                        . = ALIGN (0x4)
+                0x080042dc                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08003cac        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x08003cb0                        PROVIDE (__fini_array_end = .)
-                0x08003cb0                        . = ALIGN (0x4)
-                0x08003cb0                        _sidata = LOADADDR (.data)
+ .fini_array    0x080042dc        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x080042e0                        PROVIDE (__fini_array_end = .)
+                0x080042e0                        . = ALIGN (0x4)
+                0x080042e0                        _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x50 load address 0x08003cb0
+.data           0x20000000       0x50 load address 0x080042e0
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -3825,17 +3855,17 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn
                 0x20000050                        _edata = .
 
 .tm_clone_table
-                0x20000050        0x0 load address 0x08003d00
+                0x20000050        0x0 load address 0x08004330
  .tm_clone_table
                 0x20000050        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000050        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtend.o
 
-.igot.plt       0x20000050        0x0 load address 0x08003d00
+.igot.plt       0x20000050        0x0 load address 0x08004330
  .igot.plt      0x20000050        0x0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x20000050                        . = ALIGN (0x4)
 
-.bss            0x20000050      0x770 load address 0x08003d00
+.bss            0x20000050      0x870 load address 0x08004330
                 0x20000050                        _sbss = .
                 0x20000050                        __bss_start__ = _sbss
  *(.bss)
@@ -3877,35 +3907,35 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn
                 0x20000580       0x80 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
                 0x20000580                current_sms
  .bss.current_command
-                0x20000600       0x24 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+                0x20000600      0x126 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
                 0x20000600                current_command
- .bss.time_up   0x20000624        0x1 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
-                0x20000624                time_up
- *fill*         0x20000625        0x3 
+ .bss.time_up   0x20000726        0x1 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+                0x20000726                time_up
+ *fill*         0x20000727        0x1 
  .bss.__lock___atexit_recursive_mutex
-                0x20000628        0x1 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
-                0x20000628                __lock___atexit_recursive_mutex
- *fill*         0x20000629        0x3 
- .bss.__atexit  0x2000062c        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
-                0x2000062c                __atexit
+                0x20000728        0x1 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+                0x20000728                __lock___atexit_recursive_mutex
+ *fill*         0x20000729        0x3 
+ .bss.__atexit  0x2000072c        0x4 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+                0x2000072c                __atexit
  .bss.__atexit0
-                0x20000630      0x190 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
-                0x20000630                __atexit0
+                0x20000730      0x190 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
+                0x20000730                __atexit0
  *(COMMON)
-                0x200007c0                        . = ALIGN (0x4)
-                0x200007c0                        _ebss = .
-                0x200007c0                        __bss_end__ = _ebss
+                0x200008c0                        . = ALIGN (0x4)
+                0x200008c0                        _ebss = .
+                0x200008c0                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200007c0      0x600 load address 0x08003d00
-                0x200007c0                        . = ALIGN (0x8)
+                0x200008c0      0x600 load address 0x08004330
+                0x200008c0                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
-                0x200007c0                        PROVIDE (_end = .)
-                0x200009c0                        . = (. + _Min_Heap_Size)
- *fill*         0x200007c0      0x200 
-                0x20000dc0                        . = (. + _Min_Stack_Size)
- *fill*         0x200009c0      0x400 
-                0x20000dc0                        . = ALIGN (0x8)
+                0x200008c0                        PROVIDE (_end = .)
+                0x20000ac0                        . = (. + _Min_Heap_Size)
+ *fill*         0x200008c0      0x200 
+                0x20000ec0                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000ac0      0x400 
+                0x20000ec0                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -3960,36 +3990,48 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn
  .ARM.attributes
                 0x00000395       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
  .ARM.attributes
-                0x000003c2       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
+                0x000003c2       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcat.o)
  .ARM.attributes
-                0x000003ef       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
+                0x000003ef       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
  .ARM.attributes
-                0x0000041c       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+                0x0000041c       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o)
  .ARM.attributes
-                0x00000449       0x1b c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcmp.o)
+                0x00000449       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
  .ARM.attributes
-                0x00000464       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcpy.o)
+                0x00000476       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
  .ARM.attributes
-                0x00000491       0x1b c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcpy.o)
+                0x000004a3       0x1b c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcmp.o)
  .ARM.attributes
-                0x000004ac       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+                0x000004be       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcpy.o)
  .ARM.attributes
-                0x000004d9       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
+                0x000004eb       0x1b c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcpy.o)
  .ARM.attributes
-                0x00000506       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
+                0x00000506       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
  .ARM.attributes
-                0x00000533       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
+                0x00000533       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
  .ARM.attributes
-                0x00000560       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtend.o
+                0x00000560       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
  .ARM.attributes
-                0x0000058d       0x1d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+                0x0000058d       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcmp.o)
+ .ARM.attributes
+                0x000005ba       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strchr.o)
+ .ARM.attributes
+                0x000005e7       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strnlen.o)
+ .ARM.attributes
+                0x00000614       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
+ .ARM.attributes
+                0x00000641       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
+ .ARM.attributes
+                0x0000066e       0x2d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtend.o
+ .ARM.attributes
+                0x0000069b       0x1d c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
 OUTPUT(ifind-tag elf32-littlearm)
 LOAD linker stubs
 LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libc.a
 LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libm.a
 LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0xdcf0
+.debug_info     0x00000000     0xdcc7
  .debug_info    0x00000000      0x29b CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/gpio.c.obj
  .debug_info    0x0000029b      0x25f CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/main.c.obj
  .debug_info    0x000004fa      0x1f1 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/stm32f1xx_hal_msp.c.obj
@@ -4006,11 +4048,11 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg
  .debug_info    0x00004bda     0x293b CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .debug_info    0x00007515     0x149b CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .debug_info    0x000089b0     0x2fbb CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_info    0x0000b96b      0xfae CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
- .debug_info    0x0000c919      0xa05 CMakeFiles/ifind-tag.dir/src/main.c.obj
- .debug_info    0x0000d31e      0x9d2 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+ .debug_info    0x0000b96b      0xf6f CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+ .debug_info    0x0000c8da      0xa05 CMakeFiles/ifind-tag.dir/src/main.c.obj
+ .debug_info    0x0000d2df      0x9e8 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
 
-.debug_abbrev   0x00000000     0x253f
+.debug_abbrev   0x00000000     0x2514
  .debug_abbrev  0x00000000      0x13f CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/gpio.c.obj
  .debug_abbrev  0x0000013f      0x12e CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/main.c.obj
  .debug_abbrev  0x0000026d       0xdb CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/stm32f1xx_hal_msp.c.obj
@@ -4027,9 +4069,9 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg
  .debug_abbrev  0x000015f1      0x277 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .debug_abbrev  0x00001868      0x282 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .debug_abbrev  0x00001aea      0x30d CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_abbrev  0x00001df7      0x322 CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
- .debug_abbrev  0x00002119      0x1b6 CMakeFiles/ifind-tag.dir/src/main.c.obj
- .debug_abbrev  0x000022cf      0x270 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+ .debug_abbrev  0x00001df7      0x2d9 CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+ .debug_abbrev  0x000020d0      0x1b6 CMakeFiles/ifind-tag.dir/src/main.c.obj
+ .debug_abbrev  0x00002286      0x28e CMakeFiles/ifind-tag.dir/src/gprs.c.obj
 
 .debug_aranges  0x00000000      0xcf0
  .debug_aranges
@@ -4072,7 +4114,7 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg
                 0x00000ca0       0x50 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
 
 .debug_rnglists
-                0x00000000      0xa0c
+                0x00000000      0xa0b
  .debug_rnglists
                 0x00000000       0x13 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/gpio.c.obj
  .debug_rnglists
@@ -4106,11 +4148,11 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg
  .debug_rnglists
                 0x000007b9      0x1bc CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_rnglists
-                0x00000975       0x4a CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+                0x00000975       0x49 CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
  .debug_rnglists
-                0x000009bf       0x14 CMakeFiles/ifind-tag.dir/src/main.c.obj
+                0x000009be       0x14 CMakeFiles/ifind-tag.dir/src/main.c.obj
  .debug_rnglists
-                0x000009d3       0x39 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+                0x000009d2       0x39 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
 
 .debug_macro    0x00000000    0x176ff
  .debug_macro   0x00000000      0x1ba CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/gpio.c.obj
@@ -4174,7 +4216,7 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg
  .debug_macro   0x0001716a      0x2d2 CMakeFiles/ifind-tag.dir/src/main.c.obj
  .debug_macro   0x0001743c      0x2c3 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
 
-.debug_line     0x00000000     0xe0bf
+.debug_line     0x00000000     0xe097
  .debug_line    0x00000000      0x53f CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/gpio.c.obj
  .debug_line    0x0000053f      0x595 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/main.c.obj
  .debug_line    0x00000ad4      0x532 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/stm32f1xx_hal_msp.c.obj
@@ -4191,11 +4233,11 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg
  .debug_line    0x00005a45     0x329e CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .debug_line    0x00008ce3     0x170c CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .debug_line    0x0000a3ef     0x2740 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_line    0x0000cb2f      0x8d3 CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
- .debug_line    0x0000d402      0x5c3 CMakeFiles/ifind-tag.dir/src/main.c.obj
- .debug_line    0x0000d9c5      0x6fa CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+ .debug_line    0x0000cb2f      0x86c CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+ .debug_line    0x0000d39b      0x5c3 CMakeFiles/ifind-tag.dir/src/main.c.obj
+ .debug_line    0x0000d95e      0x739 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
 
-.debug_str      0x00000000    0x87cd1
+.debug_str      0x00000000    0x87cae
  .debug_str     0x00000000    0x81049 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/gpio.c.obj
                               0x81386 (size before relaxing)
  .debug_str     0x00081049      0x1ea CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/main.c.obj
@@ -4228,12 +4270,12 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg
                               0x81f18 (size before relaxing)
  .debug_str     0x00084044      0x642 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
                               0x81d92 (size before relaxing)
- .debug_str     0x00084686     0x352b CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
-                              0x84fec (size before relaxing)
- .debug_str     0x00087bb1       0x19 CMakeFiles/ifind-tag.dir/src/main.c.obj
-                              0x84d03 (size before relaxing)
- .debug_str     0x00087bca      0x107 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
-                              0x84ab1 (size before relaxing)
+ .debug_str     0x00084686     0x350a CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+                              0x84fc9 (size before relaxing)
+ .debug_str     0x00087b90       0x19 CMakeFiles/ifind-tag.dir/src/main.c.obj
+                              0x84d07 (size before relaxing)
+ .debug_str     0x00087ba9      0x105 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+                              0x84aaf (size before relaxing)
 
 .comment        0x00000000       0x45
  .comment       0x00000000       0x45 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/gpio.c.obj
@@ -4256,7 +4298,7 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg
  .comment       0x00000045       0x46 CMakeFiles/ifind-tag.dir/src/main.c.obj
  .comment       0x00000045       0x46 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
 
-.debug_frame    0x00000000     0x369c
+.debug_frame    0x00000000     0x383c
  .debug_frame   0x00000000       0x34 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/gpio.c.obj
  .debug_frame   0x00000034       0x4c CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/main.c.obj
  .debug_frame   0x00000080       0x38 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Core/Src/stm32f1xx_hal_msp.c.obj
@@ -4272,19 +4314,25 @@ LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg
  .debug_frame   0x0000103c     0x11b8 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .debug_frame   0x000021f4      0x638 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .debug_frame   0x0000282c      0x944 CMakeFiles/BSP.dir/C_/Microcontrollers/ifind-tag/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_frame   0x00003170      0x17c CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
- .debug_frame   0x000032ec       0x30 CMakeFiles/ifind-tag.dir/src/main.c.obj
- .debug_frame   0x0000331c      0x110 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
- .debug_frame   0x0000342c       0x2c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
- .debug_frame   0x00003458       0x28 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
- .debug_frame   0x00003480       0x2c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
- .debug_frame   0x000034ac       0xb0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
- .debug_frame   0x0000355c       0x3c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcmp.o)
- .debug_frame   0x00003598       0x20 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcpy.o)
- .debug_frame   0x000035b8       0x5c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
- .debug_frame   0x00003614       0x20 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
- .debug_frame   0x00003634       0x34 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
- .debug_frame   0x00003668       0x34 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
+ .debug_frame   0x00003170      0x164 CMakeFiles/ifind-tag.dir/src/sim868-driver.c.obj
+ .debug_frame   0x000032d4       0x30 CMakeFiles/ifind-tag.dir/src/main.c.obj
+ .debug_frame   0x00003304      0x114 CMakeFiles/ifind-tag.dir/src/gprs.c.obj
+ .debug_frame   0x00003418       0x2c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
+ .debug_frame   0x00003444       0x28 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcat.o)
+ .debug_frame   0x0000346c       0x28 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
+ .debug_frame   0x00003494       0xec c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strstr.o)
+ .debug_frame   0x00003580       0x2c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
+ .debug_frame   0x000035ac       0xb0 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+ .debug_frame   0x0000365c       0x3c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcmp.o)
+ .debug_frame   0x00003698       0x20 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strcpy.o)
+ .debug_frame   0x000036b8       0x20 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
+ .debug_frame   0x000036d8       0x5c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+ .debug_frame   0x00003734       0x20 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
+ .debug_frame   0x00003754       0x2c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcmp.o)
+ .debug_frame   0x00003780       0x34 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strchr.o)
+ .debug_frame   0x000037b4       0x20 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-strnlen.o)
+ .debug_frame   0x000037d4       0x34 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
+ .debug_frame   0x00003808       0x34 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
 
 .debug_line_str
                 0x00000000      0x176

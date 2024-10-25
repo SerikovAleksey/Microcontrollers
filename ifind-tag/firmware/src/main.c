@@ -25,7 +25,7 @@ int main()
 	
 	sim868_ctx ctx = { huart1, huart2, htim1, SIM_PWK_Pin, SIM_PWK_GPIO_Port, GNSS_EN_Pin, GNSS_EN_GPIO_Port };
 	
-	sim868_init(ctx);
+	sim868_power_on(ctx);
 	
 	while (1)
 	{

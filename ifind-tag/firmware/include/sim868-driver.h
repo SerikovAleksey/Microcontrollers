@@ -23,4 +23,4 @@ typedef struct
 } sim868_ctx;
 
 void sim868_handler(sim868_ctx ctx);
-void sim868_init(sim868_ctx ctx);
+void sim868_power_on(sim868_ctx ctx);

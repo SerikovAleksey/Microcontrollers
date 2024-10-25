@@ -2578,12 +2578,11 @@ void HAL_UART_IRQHandler(UART_HandleTypeDef *huart)
     UART_EndTransmit_IT(huart);
     return;
   }
-	
 	if (((isrflags & USART_SR_IDLE) != RESET) && ((cr1its & USART_CR1_IDLEIE) != RESET))
-  {
-	HAL_UART_IDLE_Callback(huart);
-    return;
-  }
+	{
+		HAL_UART_IDLE_Callback(huart);
+		return;
+	}
 }
 
 /**
