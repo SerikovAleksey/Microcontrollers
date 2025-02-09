@@ -33,23 +33,28 @@ void command_init(command_t* command, const char* data)
 	strcpy(command->name, data);
 	strcpy(command->status, (char*)"WAIT");
 	command->applied = false;
+	command->num_sendings = 0;
+	command->init = true;
 }
 
 void command_deinit(command_t* command)
 {
+	memset(command->answer, 0, 256);
 	command->name_len = 0;
 	command->name[0] = '\0';
 	command->answer[0] = '\0';
-	command->status[0] = '\0';
 	strcpy(command->status, (char*)"WAIT");
 	command->applied = false;
+	command->num_sendings = 0;
+	command->init = false;
 }
 
 void send_command(UART_HandleTypeDef *huart, const char* data, bool need_for_delay)
 {
 	if (!time_up && need_for_delay) return;
 	
-	command_init(&current_command, data);	
+	if (!current_command.init) command_init(&current_command, data);	
+	
 	char cmd[strlen(data) + 2];
 	strcpy(cmd, data);
 	strcat(cmd, "\r\n");
@@ -57,6 +62,7 @@ void send_command(UART_HandleTypeDef *huart, const char* data, bool need_for_del
 	HAL_UART_Transmit_IT(huart, (uint8_t*)cmd, strlen(cmd));
 	HAL_Delay(300);
 	
+	current_command.num_sendings++;
 	time_up = false;
 }
 
@@ -65,13 +71,14 @@ int send_sms(char *data)
 	char set_phone_num[24] = "AT+CMGS=\""; //  AT+CMGS="+7xxxxxxxxxx"
 	strcat(set_phone_num, current_sms.phone_num);
 	strcat(set_phone_num, "\"");
-//	send_command(&huart1, set_phone_num, false);
+	send_command(&huart1, set_phone_num, false);
 
 	uint8_t ctrlz[] = { 0x1A };
 	
-//	HAL_UART_Transmit_IT(&huart1, (uint8_t*)data, strlen(data));
-//	HAL_Delay(300);
-//	HAL_UART_Transmit_IT(&huart1, (uint8_t*)ctrlz, 1);
+	HAL_Delay(300);
+	HAL_UART_Transmit_IT(&huart1, (uint8_t*)data, strlen(data));
+	HAL_Delay(300);
+	HAL_UART_Transmit_IT(&huart1, (uint8_t*)ctrlz, 1);
 	return 0;
 }
 
@@ -121,7 +128,7 @@ void sms_parse(const char* sms)
 
 void analyze_sms_data(char* data)
 {
-	if (!current_command.applied)
+	if (!current_command.applied && current_command.num_sendings < 3)
 	{
 		send_command(&huart1, data, true);
 		return;

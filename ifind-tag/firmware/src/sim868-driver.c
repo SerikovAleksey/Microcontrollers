@@ -79,7 +79,31 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 void HAL_UART_IDLE_Callback(UART_HandleTypeDef *huart)
 {
-	if (huart == &huart1)
+	if (huart->Instance == USART2)
+	{
+		char syncword[6];
+		memcpy(syncword, gnss_active_reader->buffer, 6);
+		
+//		if (!strcmp(syncword, (char*)"\r\n+CMT")) gnss_active_reader->recieved_sms = true; 
+		
+		
+		gnss_active_reader->ready = true;
+						
+		gnss_active_reader_index = !gnss_active_reader_index;
+		gnss_active_reader = &gnss_readers[gnss_active_reader_index];
+		
+		//		memset(&sim_active_reader->buffer, 0, 256);
+		
+//		gnss_active_reader->synced = false;
+		gnss_active_reader->ready = false;
+		
+		__HAL_UART_DISABLE_IT(huart, UART_IT_IDLE);
+		HAL_UART_AbortReceive(huart);
+		__HAL_UART_CLEAR_IDLEFLAG(huart);
+		__HAL_UART_ENABLE_IT(huart, UART_IT_IDLE);
+		HAL_UART_Receive_IT(huart, (uint8_t*)gnss_active_reader->buffer, 256);
+	}
+	if (huart->Instance == USART1)
 	{
 		char syncword[6];
 		memcpy(syncword, sim_active_reader->buffer, 6);
@@ -92,15 +116,15 @@ void HAL_UART_IDLE_Callback(UART_HandleTypeDef *huart)
 		sim_active_reader_index = !sim_active_reader_index;
 		sim_active_reader = &sim_readers[sim_active_reader_index];
 		
-//		sim_active_reader->buffer[0] = '\0';
+//		memset(&sim_active_reader->buffer, 0, 256);
 		
 		sim_active_reader->synced = false;
 		sim_active_reader->ready = false;
 		
-		__HAL_UART_DISABLE_IT(&huart1, UART_IT_IDLE);
-		HAL_UART_AbortReceive(&huart1);
-		__HAL_UART_CLEAR_IDLEFLAG(&huart1);
-		__HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE);
+		__HAL_UART_DISABLE_IT(huart, UART_IT_IDLE);
+		HAL_UART_AbortReceive(huart);
+		__HAL_UART_CLEAR_IDLEFLAG(huart);
+		__HAL_UART_ENABLE_IT(huart, UART_IT_IDLE);
 		HAL_UART_Receive_IT(huart, (uint8_t*)sim_active_reader->buffer, 256);
 	}
 }
@@ -178,16 +202,20 @@ void sms_start_receive()
 	if (!send1) 
 	{
 		send_command(&huart1, cmds[12], true);
+		return;
 	}
 	if (!send2) 
 	{
 		send_command(&huart1, cmds[15], true);
+		return;
 	}
 	if (!send3) 
 	{
 		send_command(&huart1, cmds[6], true);
+		return;
 	}
-	if (send1 && send2 && send3) sms_init = true;
+	
+	sms_init = true;
 }
 
 void sim868_power_on(sim868_ctx ctx)
@@ -195,19 +223,20 @@ void sim868_power_on(sim868_ctx ctx)
 	gnss_active_reader = &gnss_readers[gnss_active_reader_index];
 	sim_active_reader = &sim_readers[sim_active_reader_index];
 	
-	HAL_GPIO_WritePin(ctx.sim_pwk_port, ctx.sim_pwk_pin, GPIO_PIN_RESET); // включение сотовой связи
-//	HAL_GPIO_WritePin(ctx.gnss_pwk_port, ctx.gnss_pwk_pin, GPIO_PIN_RESET); // включение gps
-	HAL_Delay(2000);
-	HAL_GPIO_WritePin(ctx.sim_pwk_port, ctx.sim_pwk_pin, GPIO_PIN_SET);
-//	HAL_GPIO_WritePin(ctx.gnss_pwk_port, ctx.gnss_pwk_pin, GPIO_PIN_SET);
+//	__HAL_UART_ENABLE_IT(&ctx.gnss_uart, UART_IT_IDLE);
+	HAL_UART_Receive_IT(&ctx.gnss_uart, (uint8_t*)gnss_active_reader->buffer, 256);
 	
-	HAL_UART_Receive_IT(&ctx.gnss_uart, &gnss_byte, 1);
 	__HAL_UART_ENABLE_IT(&ctx.sim_uart, UART_IT_IDLE);
 	HAL_UART_Receive_IT(&ctx.sim_uart, (uint8_t*)sim_active_reader->buffer, 256);
 	
 	__HAL_TIM_CLEAR_FLAG(&ctx.tim, TIM_SR_UIF); // очищаем флаг
 	HAL_TIM_Base_Start_IT(&ctx.tim);
 	
+	HAL_GPIO_WritePin(ctx.gnss_pwk_port, ctx.gnss_pwk_pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(ctx.sim_pwk_port, ctx.sim_pwk_pin, GPIO_PIN_RESET); // включение сотовой связи
+//	HAL_GPIO_WritePin(ctx.gnss_pwk_port, ctx.gnss_pwk_pin, GPIO_PIN_RESET); // включение gps
+	HAL_Delay(2000);
+	HAL_GPIO_WritePin(ctx.sim_pwk_port, ctx.sim_pwk_pin, GPIO_PIN_SET);
 }
 
 void sim868_handler(sim868_ctx ctx)
@@ -217,6 +246,7 @@ void sim868_handler(sim868_ctx ctx)
 	sim_reader_t* inactive_sim_reader = &sim_readers[!sim_active_reader_index];
 	
 	if (!sms_init) sms_start_receive();
+//	send_command(&huart1, gnss_cmds[0], true);
 	
 	sms_handler();
 	

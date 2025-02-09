@@ -1,5 +1,5 @@
-C:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug/CMakeFiles/ifind-tag.dir
-C:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug/CMakeFiles/BSP.dir
-C:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug/CMakeFiles/ifind-tag-bin.dir
-C:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug/CMakeFiles/edit_cache.dir
-C:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug/CMakeFiles/rebuild_cache.dir
+D:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug/CMakeFiles/BSP.dir
+D:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug/CMakeFiles/ifind-tag.dir
+D:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug/CMakeFiles/ifind-tag-bin.dir
+D:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug/CMakeFiles/edit_cache.dir
+D:/Microcontrollers/ifind-tag/firmware/build/VisualGDB/Debug/CMakeFiles/rebuild_cache.dir

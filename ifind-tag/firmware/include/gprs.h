@@ -14,6 +14,8 @@ typedef struct
 	bool applied;
 	char status[5];
 	char answer[256];
+	uint16_t num_sendings;
+	bool init;
 }command_t;
 
 extern command_t current_command;
@@ -37,6 +39,12 @@ static const char *cmds[] = {
 	"AT+COPS?",
 	"AT+CSDT=0",
 	"AT+CSCS=\"GSM\""
+};
+
+static const char *gnss_cmds[] = {
+	"AT+CGNSPWR?",
+	"AT+CGNSINF",
+	"AT+CGNSTST=1",
 };
 
 static const char *actions[] = {};
