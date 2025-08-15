@@ -1,0 +1,27 @@
+# ninja log v5
+12	43	7769877838592739	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Core/Startup/startup_stm32f103c6tx.s.obj	ad9f9711dd08196d
+11	164	7769877839705654	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Core/Src/sysmem.c.obj	b1010ba8dfbc3968
+9	209	7769877840237044	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Core/Src/syscalls.c.obj	30b79f186bcf081
+8	239	7769877840437572	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Core/Src/stm32f1xx_it.c.obj	adb48c207f5f71f3
+3	243	7769877840417517	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Core/Src/main.c.obj	2f1f22212aa8fcd4
+0	244	7769877840377413	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Core/Src/gpio.c.obj	d84cf47f93cb6e33
+5	245	7769877840447627	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Core/Src/stm32f1xx_hal_msp.c.obj	c6bad95e5f741a83
+14	246	7769877840567910	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Core/Src/system_stm32f1xx.c.obj	2c80a01109287303
+17	249	7769877840567910	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj	eb0fc44dcb674ee3
+6	250	7769877840597989	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj	fe663237a15463c
+19	259	7769877840748383	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj	298a24d70649e10f
+165	265	7769877840828595	CMakeFiles/led-stairs.dir/src/main.c.obj	9565aec4ba0d8c16
+21	267	7769877840798513	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj	c8282cb2f8a34b8
+32	268	7769877840848647	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj	88fe77844885e89d
+15	272	7769877840878734	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj	d07d508ee0a9152d
+44	273	7769877840908807	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj	4b6c0086341014af
+25	275	7769877840928868	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj	b49b7b10083a05b9
+36	276	7769877840948919	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj	4c638ae9233aac37
+23	277	7769877840928868	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj	83a60f173d126b84
+28	279	7769877840968963	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj	b7a920093920b853
+210	344	7769877841630694	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj	e920b74f66b197ea
+239	367	7769877841851274	CMakeFiles/BSP.dir/D_/Microcontrollers/led-stairs/common/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj	7061414620173592
+2	52	7769878119231666	CMakeFiles/led-stairs.dir/src/main.c.obj	9565aec4ba0d8c16
+53	150	7769878120154080	led-stairs	1206a4472bb89e25
+150	176	7769878120484952	led-stairs.bin	b583180e13d77891
+150	176	7769878120484952	D:/Microcontrollers/led-stairs/firmware/build/VisualGDB/Debug/led-stairs.bin	b583180e13d77891
