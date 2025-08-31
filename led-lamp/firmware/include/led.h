@@ -5,8 +5,8 @@
 extern TIM_HandleTypeDef htim3;
 
 
-#define LED_COUNT 3 // Amount of led
-#define LED_IN_GROUP 3
+#define LED_COUNT 6 // Amount of led
+#define LED_IN_GROUP 6
 #define GROUP_COUNT LED_COUNT / LED_IN_GROUP
 #define DELAY_LEN 40 // 
 #define ARRAY_LEN DELAY_LEN + 24 * LED_COUNT
